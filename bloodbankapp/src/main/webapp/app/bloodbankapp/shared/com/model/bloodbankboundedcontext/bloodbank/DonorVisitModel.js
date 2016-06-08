@@ -1,0 +1,42 @@
+Ext.define('Bloodbankapp.bloodbankapp.shared.com.model.bloodbankboundedcontext.bloodbank.DonorVisitModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "donorVisitId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "orgnizerName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "dtype",
+          "reference": "DonationType",
+          "defaultValue": ""
+     }, {
+          "name": "donor",
+          "reference": "RegisterADonor",
+          "defaultValue": ""
+     }, {
+          "name": "camp",
+          "reference": "RegisterACamp",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "ClinicalInfo",
+          "reference": "ClinicalInfoModel"
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

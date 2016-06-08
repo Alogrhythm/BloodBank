@@ -1,0 +1,32 @@
+Ext.define('Bloodbankapp.bloodbankapp.shared.com.model.bloodbankboundedcontext.bloodbank.RegCampInfoModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "campTime"
+     }, {
+          "name": "organisationName"
+     }, {
+          "name": "reasonForCamp"
+     }, {
+          "name": "bloodBankName"
+     }, {
+          "name": "fromDate"
+     }, {
+          "name": "toDate"
+     }, {
+          "name": "noOfDonorsExpected"
+     }, {
+          "name": "noOfDonorsArrived"
+     }, {
+          "name": "noOfDonorsThatBled"
+     }, {
+          "name": "addressType"
+     }, {
+          "name": "country"
+     }, {
+          "name": "state"
+     }, {
+          "name": "city"
+     }, {
+          "name": "postalCode"
+     }]
+});

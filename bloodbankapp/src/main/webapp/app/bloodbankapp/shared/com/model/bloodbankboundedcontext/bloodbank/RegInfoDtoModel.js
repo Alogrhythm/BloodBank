@@ -1,0 +1,30 @@
+Ext.define('Bloodbankapp.bloodbankapp.shared.com.model.bloodbankboundedcontext.bloodbank.RegInfoDtoModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "donorName"
+     }, {
+          "name": "dob"
+     }, {
+          "name": "phoneNo"
+     }, {
+          "name": "emailId"
+     }, {
+          "name": "gender"
+     }, {
+          "name": "bg"
+     }, {
+          "name": "lastDonationDate"
+     }, {
+          "name": "howOftenUDonated"
+     }, {
+          "name": "countryId"
+     }, {
+          "name": "state"
+     }, {
+          "name": "city"
+     }, {
+          "name": "addressType"
+     }, {
+          "name": "postalCode"
+     }]
+});

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-06-08T10:40:57" hostname="d669fb8cdd3c" time="1.297">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase" time="0.569"/>
+  <testcase name="test2Update" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase" time="0.07"/>
+  <testcase name="test3FindById" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase" time="0.008"/>
+  <testcase name="test3findBydonorVisitId" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase" time="0.009"/>
+  <testcase name="test5NegativeTesting" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase" time="0.03"/>
+  <testcase name="test6Delete" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase" time="0.608"/>
+  <system-out><![CDATA[Wed Jun 08 10:40:57 UTC 2016|Log Manager Factory|Initialization Process started.....
+Wed Jun 08 10:40:57 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
+Wed Jun 08 10:40:57 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
+Wed Jun 08 10:40:57 UTC 2016|Alarm Manager|Loading Alarms ......
+Wed Jun 08 10:40:57 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
+Wed Jun 08 10:40:57 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
+Wed Jun 08 10:40:57 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=4/564 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP= A.Map=[645]  E.Map EC/RC=[238/66] )
+Wed Jun 08 10:40:57 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
+Wed Jun 08 10:40:57 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
+Wed Jun 08 10:40:57 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
+Wed Jun 08 10:40:57 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
+Wed Jun 08 10:40:57 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
+Wed Jun 08 10:40:57 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
+Wed Jun 08 10:40:57 UTC 2016|Alarm Manager|Initialized Exception Lookup...
+Wed Jun 08 10:40:57 UTC 2016|Log Manager|Initialize Log Config File ......
+Wed Jun 08 10:40:57 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
+Wed Jun 08 10:40:57 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
+Wed Jun 08 10:40:57 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
+Wed Jun 08 10:40:57 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
+Wed Jun 08 10:40:57 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
+Wed Jun 08 10:40:57 UTC 2016|Log Manager|Loading Default Connector for Logging ......
+Wed Jun 08 10:40:57 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
+Wed Jun 08 10:40:57 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
+Wed Jun 08 10:40:57 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@730342d0] ....
+Wed Jun 08 10:40:57 UTC 2016|Scheduler|Starting the Scheduler ......
+Wed Jun 08 10:40:57 UTC 2016|Scheduler|Adding [LMID=[b79d927c-f182-4350-967c-51a309562ddf]] Delay=5 Time Unit=MINUTES
+Wed Jun 08 10:40:57 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
+Wed Jun 08 10:40:57 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
+Wed Jun 08 10:40:57 UTC 2016|Scheduler|Startup Completed..
+Wed Jun 08 10:40:57 UTC 2016|Log Manager|Initialization Process Complete ......
+Wed Jun 08 10:40:57 UTC 2016|Log Manager Factory|Log Manager READY! ID = b79d927c-f182-4350-967c-51a309562ddf
+[EL Fine]: sql: 2016-06-08 10:40:57.262--ClientSession(127040723)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_DonationType_M (donationTypeId, donationTypes, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [190C17C1-A89B-4225-9E44-E0C6CB77C153, t831Vee67HwAszrRINLKVbZpJxQwtVsm6ckXH2Y2nhZ2czXTjR, 1, AAAAA, 2016-06-08 10:40:57.26, AAAAA, 2016-06-08 10:40:57.26, 1, 51000]
+[EL Fine]: sql: 2016-06-08 10:40:57.322--ClientSession(1684960325)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [1F21A6C8-C6CC-4C2B-87BD-0A42F96A6F23, NlcjVRrSSq971VYSPq8u4V6GLXNbwB0O, 2, 2, iI2, oSi, THtiorSXKhils0OXYVhmkZT5HZFuFXTNXUlaRvtNobF8JwzOL5, lVKojqEZTcB4Rw9lFDTJpkpCcUiDbUGLslqcUEJrfwlkhqRBoo, MNt, bfM1K8z8LyuIMcp8GKjukm5hbUhJcYYtCtbd2sHCR1btN0caGD, Pgm0MigYTHMb9MpXAzne2Pd2qEsxMhjY, 592, 1, AAAAA, 2016-06-08 10:40:57.317, AAAAA, 2016-06-08 10:40:57.317, 1, 51000]
+[EL Fine]: sql: 2016-06-08 10:40:57.37--ClientSession(1937730718)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AddressType_M (addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [DA3AF155-7116-4BE3-A4CE-D1359D33B931, HxpJX6DFYkTLYJnGGW3E0IFDKxAFQMHiYFInZx1ADjOMibxPNp, c2Qq2b3aQHFM2u3N0DYHwW3Hg32KTUkQyfSsBe1txG2Ok5KXPM, 88WXeeadpkkflV1D8LQEu93KTYQstnukUaBBHMO2J2vDfvgtyZ, 1, AAAAA, 2016-06-08 10:40:57.368, AAAAA, 2016-06-08 10:40:57.368, 1, 51000]
+[EL Fine]: sql: 2016-06-08 10:40:57.425--ClientSession(2109572454)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_State_M (stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [FA346AB9-F8A2-4829-A1ED-7C811519D855, 1F21A6C8-C6CC-4C2B-87BD-0A42F96A6F23, gGMlEsW3RLee3wHuXABJgCTIS3403PVezNcUhtRZB8K5F3RXX3, 2, 10, 1, FFa5u48INIsyZ2KS7IYSefWdcApZ9a2b, v5eP4J3Z3NYVRarRd4j1fp9W0k2V1xzd, 0KbWzPrianajF7LvHGSwDCEfgOpf2QnrPJzXrakMgpzUtYw5q0, 8yL0o1TyJo8az908qD2iJpmQhV6eBpsM7B0OCE5l8JWOC3CKsa, OuR5fBKGpIbnaDrpGbOvY1KZO9XRz7p8cqn2ox3VTIZSbeT802, 1, AAAAA, 2016-06-08 10:40:57.418, AAAAA, 2016-06-08 10:40:57.418, 1, 51000]
+[EL Fine]: sql: 2016-06-08 10:40:57.473--ClientSession(1511226379)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_City_M (cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [1B7BB2A2-05CC-4BA8-9418-334D8EF17F84, 2, IFiSJwlFVMGGVepTSuHIpWoovuXJCexY, IGKdz5H59SZ6yLuIHjBv8S8YvrUViWx6fbno4kUFxXnDXCka8f, v5P9k2jjOuhqYpRnx0OY4QLWIObcQnR12Y9ri2FpoooAVDLLES, 6, 3, TrtiK637kpbqvIOsfQb7x7diBykaILJtnMPGGypMGb5TSSZtR0, 1F21A6C8-C6CC-4C2B-87BD-0A42F96A6F23, FA346AB9-F8A2-4829-A1ED-7C811519D855, 1, AAAAA, 2016-06-08 10:40:57.418, AAAAA, 2016-06-08 10:40:57.418, 1, 51000]
+[EL Fine]: sql: 2016-06-08 10:40:57.526--ClientSession(1164469645)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Address_T (addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [D33EC922-DC70-4E57-8F84-8E2112B5E656, 81SoARG4ZdA5ARdJ6fGegIi3yogMA8sn84BIPADayqNUOl48ie, rD4Yinvf0hNH0hLj8KP7nfvoylQnJcm8PkknvcdOwd1sZrYAgO, yEH9WYWMUilpYM84iOPZnrHrTeyu0zX761EW48Jo61WIaumITs, 1Cc4fqFORV7, DA3AF155-7116-4BE3-A4CE-D1359D33B931, 1B7BB2A2-05CC-4BA8-9418-334D8EF17F84, 1F21A6C8-C6CC-4C2B-87BD-0A42F96A6F23, et3CRkfuSGz9QHT0OdiuHjuubglxStMzqjQme7VUagcV5KRWTG, kVxLiCmMMNXhf0HTCdBdoGr5Quo8mvKQIFQGb0mZI1G4eZnWMM, FA346AB9-F8A2-4829-A1ED-7C811519D855, 1, gf8W4H, AAAAA, 2016-06-08 10:40:57.317, AAAAA, 2016-06-08 10:40:57.317, 1, 51000]
+[EL Fine]: sql: 2016-06-08 10:40:57.578--ClientSession(1488031874)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_RegisterACamp_T (campId, addr, bloodBankName, campTime, fromDate, noOfDonorsArrived, noOfDonorsExpected, noOfDonorsThatBled, organisationName, reasonForCamp, toDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [6650228F-53B3-49AD-9E54-765ADA249B5B, D33EC922-DC70-4E57-8F84-8E2112B5E656, w9BQ7ZMHLLbIHQC0xrJoN3KO2DPwcwv25HbWuks61Cbebz83tF, lGbmYYyV5EfnSTMkIH2Zdpta6b6gtCxnYAdZeNA9NWtILHgJJV, 2016-06-08 10:33:44.121, 2147483647, 2147483647, 2147483647, il8AXCVV0xVOq0rIs9raEZRh168VRWuYcDRgwdkNrwApvaJnPt, X2l4Q5u2ecuyLgUXKIiS3Pp6f6FhhK86rk7p6FvsA2ljZ67SOX, 2016-06-08 10:33:44.121, 1, AAAAA, 2016-06-08 10:40:57.317, AAAAA, 2016-06-08 10:40:57.317, 1, 51000]
+[EL Fine]: sql: 2016-06-08 10:40:57.606--ClientSession(1205418479)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_BloodGroup_M (bloodGroupId, bloodGroups, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [D418255E-85DB-478A-8C9B-5E78457A5452, JDnCKZ6LaXqXuPbyHPgy53pAhf7MKIzsUS6eYE8hzZe0omwvTB, 1, AAAAA, 2016-06-08 10:40:57.603, AAAAA, 2016-06-08 10:40:57.603, 1, 51000]
+[EL Fine]: sql: 2016-06-08 10:40:57.639--ClientSession(2021139730)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Gender_M (genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [2458A5E2-109F-4C7F-B1B5-0C5D608D2062, qsyqRqt6sMy6NnDt96uL4bM16XBsVxs9OkKKubP90Nc0a3fRwE, 1, AAAAA, 2016-06-08 10:40:57.636, AAAAA, 2016-06-08 10:40:57.636, 1, 51000]
+[EL Fine]: sql: 2016-06-08 10:40:57.673--ClientSession(1813598412)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_RegisterADonor_T (donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [38B33F81-41B4-4CCB-8E7E-FD47C0F45E01, D33EC922-DC70-4E57-8F84-8E2112B5E656, D418255E-85DB-478A-8C9B-5E78457A5452, 2016-06-08 10:33:44.156, KEfRCL998qclZxlZ8ojDZZt5J8TBSAVQeB07xiFVAIPFaxE1c7, IzrfUFKRCJmFq9deQz8eBlFjQQ0986nvh7xMvf7RkIDkmX3mko, 2458A5E2-109F-4C7F-B1B5-0C5D608D2062, 2147483647, 2016-06-08 10:33:44.197, aDiEEdn22FMkNSCpJTsTNtCX4OoYmeuYPAvUHDQ4wIrp8jLQKK, 1, AAAAA, 2016-06-08 10:40:57.603, AAAAA, 2016-06-08 10:40:57.603, 1, 51000]
+[EL Fine]: sql: 2016-06-08 10:40:57.706--ClientSession(1615106476)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_DonorVisit_T (donorVisitId, camp, dType, donor, orgnizerName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [738CE251-F970-4423-B911-1060C96D5151, 6650228F-53B3-49AD-9E54-765ADA249B5B, 190C17C1-A89B-4225-9E44-E0C6CB77C153, 38B33F81-41B4-4CCB-8E7E-FD47C0F45E01, BXY98ksxyNbUjEqL177kKwJBwmtPwJ7sgRLNTTRVnD9c7PhBXu, 1, AAAAA, 2016-06-08 10:40:57.26, AAAAA, 2016-06-08 10:40:57.26, 1, 51000]
+[EL Fine]: sql: 2016-06-08 10:40:57.707--ClientSession(1615106476)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_ClinicalInfo_TP (clinicalInfoId, bp, height, pulse, temprature, unitsOfBlood, versionId, weight, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, donorVisitId) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [1B129341-D764-40BD-8485-EB7CE251A265, RwFGa8Mtxt35o18uEPo7Frcb1PTzVDOkBrHzjNDcHyRmd9UlkG, jYbMXxrxFHFnon4gFEO7ND3aNNuVz9ps1scGMCr27HdTNyoutH, RYgfkXG4UYJ0vEQpsPcSwtvz7fSiTxHpcg7QogGL9GnJXVAdpa, FYYKtcpxlKW2hnDsCmCgO9t2TOUlLFTg9eYGsoapUIkGtzvO1E, 2147483647, 1, GC9wy5xk7WADsZ5yVUCwPNW7Yu2OC80bZugbkcgTBM1CrQLWvw, AAAAA, 2016-06-08 10:40:57.702, AAAAA, 2016-06-08 10:40:57.702, 1, 51000, 738CE251-F970-4423-B911-1060C96D5151]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-06-08 10:40:57.756--ClientSession(865603674)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_BloodResult_T (bloodResultId, collectedDate, donor, donorVisitId, expiryDate, isTested, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [2B5FD019-7CA1-48F0-AF99-D39D5FF60F77, 2016-06-08 10:33:44.331, lAFrfxQNb3IOTdzEC1wwIts7lEU3Ans4E4fXFSb1IDdN1XKvtw, 738CE251-F970-4423-B911-1060C96D5151, 2016-06-08 10:33:44.331, true, 2147483647, 1, AAAAA, 2016-06-08 10:40:57.752, AAAAA, 2016-06-08 10:40:57.752, 1, 51000]
+[EL Fine]: sql: 2016-06-08 10:40:57.81--ClientSession(1417549714)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodResultId, collectedDate, donor, donorVisitId, expiryDate, isTested, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodResult_T WHERE ((activeStatus = ?) AND (bloodResultId = ?))
+	bind => [1, 2B5FD019-7CA1-48F0-AF99-D39D5FF60F77]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-06-08 10:40:57.816--ClientSession(2125204399)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodResultId, collectedDate, donor, donorVisitId, expiryDate, isTested, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodResult_T WHERE (bloodResultId = ?)
+	bind => [2B5FD019-7CA1-48F0-AF99-D39D5FF60F77]
+[EL Fine]: sql: 2016-06-08 10:40:57.818--ClientSession(2125204399)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--UPDATE ast_BloodResult_T SET collectedDate = ?, donor = ?, expiryDate = ?, versionId = ? WHERE ((bloodResultId = ?) AND (versionId = ?))
+	bind => [2016-06-08 10:33:44.346, j93DwuEowNKIo0zzfoHxc53avezHt4e1Tq9WPSHyxdWa7Sf5We, 2016-06-08 10:33:44.347, 2, 2B5FD019-7CA1-48F0-AF99-D39D5FF60F77, 1]
+[EL Fine]: sql: 2016-06-08 10:40:57.88--ClientSession(430037178)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodResultId, collectedDate, donor, donorVisitId, expiryDate, isTested, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodResult_T WHERE ((activeStatus = ?) AND (bloodResultId = ?))
+	bind => [1, 2B5FD019-7CA1-48F0-AF99-D39D5FF60F77]
+[EL Fine]: sql: 2016-06-08 10:40:57.889--ClientSession(324084129)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodResultId, collectedDate, donor, donorVisitId, expiryDate, isTested, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodResult_T WHERE ((activeStatus = ?) AND (donorVisitId = ?))
+	bind => [1, 738CE251-F970-4423-B911-1060C96D5151]
+[EL Fine]: sql: 2016-06-08 10:40:57.931--ClientSession(733862248)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodResultId, collectedDate, donor, donorVisitId, expiryDate, isTested, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodResult_T WHERE (bloodResultId = ?)
+	bind => [2B5FD019-7CA1-48F0-AF99-D39D5FF60F77]
+[EL Fine]: sql: 2016-06-08 10:40:57.933--ClientSession(733862248)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_BloodResult_T WHERE ((bloodResultId = ?) AND (versionId = ?))
+	bind => [2B5FD019-7CA1-48F0-AF99-D39D5FF60F77, 2]
+[EL Fine]: sql: 2016-06-08 10:40:58.025--ClientSession(1595022931)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT donorVisitId, camp, dType, donor, orgnizerName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_DonorVisit_T WHERE (donorVisitId = ?)
+	bind => [738CE251-F970-4423-B911-1060C96D5151]
+[EL Fine]: sql: 2016-06-08 10:40:58.027--ClientSession(1595022931)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT clinicalInfoId, bp, height, pulse, temprature, unitsOfBlood, versionId, weight, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, donorVisitId FROM ast_ClinicalInfo_TP WHERE (donorVisitId = ?)
+	bind => [738CE251-F970-4423-B911-1060C96D5151]
+[EL Fine]: sql: 2016-06-08 10:40:58.031--ClientSession(1595022931)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_ClinicalInfo_TP WHERE ((clinicalInfoId = ?) AND (versionId = ?))
+	bind => [1B129341-D764-40BD-8485-EB7CE251A265, 1]
+[EL Fine]: sql: 2016-06-08 10:40:58.032--ClientSession(1595022931)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_DonorVisit_T WHERE ((donorVisitId = ?) AND (versionId = ?))
+	bind => [738CE251-F970-4423-B911-1060C96D5151, 1]
+[EL Fine]: sql: 2016-06-08 10:40:58.132--ClientSession(437977351)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_RegisterADonor_T WHERE (donorId = ?)
+	bind => [38B33F81-41B4-4CCB-8E7E-FD47C0F45E01]
+[EL Fine]: sql: 2016-06-08 10:40:58.135--ClientSession(437977351)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_RegisterADonor_T WHERE ((donorId = ?) AND (versionId = ?))
+	bind => [38B33F81-41B4-4CCB-8E7E-FD47C0F45E01, 1]
+[EL Fine]: sql: 2016-06-08 10:40:58.183--ClientSession(4306512)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE (genderId = ?)
+	bind => [2458A5E2-109F-4C7F-B1B5-0C5D608D2062]
+[EL Fine]: sql: 2016-06-08 10:40:58.186--ClientSession(4306512)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Gender_M WHERE ((genderId = ?) AND (versionId = ?))
+	bind => [2458A5E2-109F-4C7F-B1B5-0C5D608D2062, 1]
+[EL Fine]: sql: 2016-06-08 10:40:58.216--ClientSession(641528548)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodGroupId, bloodGroups, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodGroup_M WHERE (bloodGroupId = ?)
+	bind => [D418255E-85DB-478A-8C9B-5E78457A5452]
+[EL Fine]: sql: 2016-06-08 10:40:58.218--ClientSession(641528548)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_BloodGroup_M WHERE ((bloodGroupId = ?) AND (versionId = ?))
+	bind => [D418255E-85DB-478A-8C9B-5E78457A5452, 1]
+[EL Fine]: sql: 2016-06-08 10:40:58.25--ClientSession(1944817279)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT campId, addr, bloodBankName, campTime, fromDate, noOfDonorsArrived, noOfDonorsExpected, noOfDonorsThatBled, organisationName, reasonForCamp, toDate, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_RegisterACamp_T WHERE (campId = ?)
+	bind => [6650228F-53B3-49AD-9E54-765ADA249B5B]
+[EL Fine]: sql: 2016-06-08 10:40:58.253--ClientSession(1944817279)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_RegisterACamp_T WHERE ((campId = ?) AND (versionId = ?))
+	bind => [6650228F-53B3-49AD-9E54-765ADA249B5B, 1]
+[EL Fine]: sql: 2016-06-08 10:40:58.283--ClientSession(1284591556)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE (addressId = ?)
+	bind => [D33EC922-DC70-4E57-8F84-8E2112B5E656]
+[EL Fine]: sql: 2016-06-08 10:40:58.286--ClientSession(1284591556)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Address_T WHERE ((addressId = ?) AND (versionId = ?))
+	bind => [D33EC922-DC70-4E57-8F84-8E2112B5E656, 1]
+[EL Fine]: sql: 2016-06-08 10:40:58.315--ClientSession(2028431850)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_City_M WHERE (cityId = ?)
+	bind => [1B7BB2A2-05CC-4BA8-9418-334D8EF17F84]
+[EL Fine]: sql: 2016-06-08 10:40:58.318--ClientSession(2028431850)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_City_M WHERE ((cityId = ?) AND (versionId = ?))
+	bind => [1B7BB2A2-05CC-4BA8-9418-334D8EF17F84, 1]
+[EL Fine]: sql: 2016-06-08 10:40:58.349--ClientSession(1120125284)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_State_M WHERE (stateId = ?)
+	bind => [FA346AB9-F8A2-4829-A1ED-7C811519D855]
+[EL Fine]: sql: 2016-06-08 10:40:58.351--ClientSession(1120125284)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_State_M WHERE ((stateId = ?) AND (versionId = ?))
+	bind => [FA346AB9-F8A2-4829-A1ED-7C811519D855, 1]
+[EL Fine]: sql: 2016-06-08 10:40:58.382--ClientSession(594567943)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE (addressTypeId = ?)
+	bind => [DA3AF155-7116-4BE3-A4CE-D1359D33B931]
+[EL Fine]: sql: 2016-06-08 10:40:58.385--ClientSession(594567943)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AddressType_M WHERE ((addressTypeId = ?) AND (versionId = ?))
+	bind => [DA3AF155-7116-4BE3-A4CE-D1359D33B931, 1]
+[EL Fine]: sql: 2016-06-08 10:40:58.433--ClientSession(1239307824)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
+	bind => [1F21A6C8-C6CC-4C2B-87BD-0A42F96A6F23]
+[EL Fine]: sql: 2016-06-08 10:40:58.435--ClientSession(1239307824)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Country_M WHERE ((countryId = ?) AND (versionId = ?))
+	bind => [1F21A6C8-C6CC-4C2B-87BD-0A42F96A6F23, 1]
+[EL Fine]: sql: 2016-06-08 10:40:58.483--ClientSession(42226506)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT donationTypeId, donationTypes, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_DonationType_M WHERE (donationTypeId = ?)
+	bind => [190C17C1-A89B-4225-9E44-E0C6CB77C153]
+[EL Fine]: sql: 2016-06-08 10:40:58.485--ClientSession(42226506)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_DonationType_M WHERE ((donationTypeId = ?) AND (versionId = ?))
+	bind => [190C17C1-A89B-4225-9E44-E0C6CB77C153, 1]
+]]></system-out>
+  <system-err><![CDATA[BloodResult.collectedDate may not be null
+java.lang.SecurityException: BloodResult.collectedDate may not be null
+	at com.athena.server.pluggable.utils.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:37)
+	at com.app.shared.bloodbankboundedcontext.bloodbank.BloodResult.isValid(BloodResult.java:217)
+	at com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase.validateBloodResult(BloodResultTestCase.java:424)
+	at com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase.test5NegativeTesting(BloodResultTestCase.java:459)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+BloodResult.expiryDate may not be null
+java.lang.SecurityException: BloodResult.expiryDate may not be null
+	at com.athena.server.pluggable.utils.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:37)
+	at com.app.shared.bloodbankboundedcontext.bloodbank.BloodResult.isValid(BloodResult.java:217)
+	at com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase.validateBloodResult(BloodResultTestCase.java:424)
+	at com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase.test5NegativeTesting(BloodResultTestCase.java:465)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+BloodResult.isTested may not be null
+java.lang.SecurityException: BloodResult.isTested may not be null
+	at com.athena.server.pluggable.utils.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:37)
+	at com.app.shared.bloodbankboundedcontext.bloodbank.BloodResult.isValid(BloodResult.java:217)
+	at com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase.validateBloodResult(BloodResultTestCase.java:424)
+	at com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase.test5NegativeTesting(BloodResultTestCase.java:471)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+BloodResult.noOfUnits may not be null
+java.lang.SecurityException: BloodResult.noOfUnits may not be null
+	at com.athena.server.pluggable.utils.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:37)
+	at com.app.shared.bloodbankboundedcontext.bloodbank.BloodResult.isValid(BloodResult.java:217)
+	at com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase.validateBloodResult(BloodResultTestCase.java:424)
+	at com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase.test5NegativeTesting(BloodResultTestCase.java:479)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+BloodResult.donor size must be between 1 and 256
+java.lang.SecurityException: BloodResult.donor size must be between 1 and 256
+	at com.athena.server.pluggable.utils.helper.EntityValidatorHelper.validateEntity(EntityValidatorHelper.java:37)
+	at com.app.shared.bloodbankboundedcontext.bloodbank.BloodResult.isValid(BloodResult.java:217)
+	at com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase.validateBloodResult(BloodResultTestCase.java:422)
+	at com.app.server.service.bloodbankboundedcontext.bloodbank.BloodResultTestCase.test5NegativeTesting(BloodResultTestCase.java:484)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:86)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:49)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:64)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:360)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+]]></system-err>
+</testsuite>

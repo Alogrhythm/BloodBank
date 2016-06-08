@@ -1,0 +1,2 @@
+
+GRANT ALL PRIVILEGES  ON bbank.* TO 'bbank'@'%' IDENTIFIED BY 'bbank' WITH GRANT OPTION

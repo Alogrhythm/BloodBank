@@ -1,0 +1,33 @@
+
+
+[7m[0mbuzzormethod add --toClass LoginTestCase --method_name addingListOfFieldForNegativeTesting --modifier private --return_type java.util.List<EntityTestCriteria> --method_body "List<EntityTestCriteria> entityContraints = new java.util.ArrayList<EntityTestCriteria>();entityContraints.add(new EntityTestCriteria(NOT_NULL,1, "loginId", null));entityContraints.add(new EntityTestCriteria(MIN_MAX,2, "loginId", "LXRrlgYwEWIplahHELhHcJ5Bygqy7BVExpwuf1ZviY1tYZx3g26eb87kDKWP6RqnAhAn924Yk7OjGstugDOEAdooiwk5vj4UQuciMlu5UFv9tFL8kNI4HTPyFisidOKED49yRel5K59R9DdbmfzMZSxUwu0bl49Syu5IDh90UtnNhchrGJZEwKQenhhB6FLJ6rU0nmPyJ"));entityContraints.add(new EntityTestCriteria(MIN_MAX,3, "serverAuthImage", "2kiPiyLmHZbfHcMNfyw1rEAukZv2f62eD"));entityContraints.add(new EntityTestCriteria(MIN_MAX,4, "serverAuthText", "qXgrDJOK8Ny7GjT19"));entityContraints.add(new EntityTestCriteria(MIN_MAX,5, "failedLoginAttempts", 13));entityContraints.add(new EntityTestCriteria(MIN_MAX,6, "isAuthenticated", true));return entityContraints;" --isStatic false [7m[0mbuzzormethod add --toClass LoginTestCase --method_name addingListOfFieldForNegativeTesting --modifier private --return_type java.util.List<EntityTestCriteria> --method_body "List<EntityTestCriteria> entityContraints = new java.util.ArrayList<EntityTestCriteria>();entityContraints.add(new EntityTestCriteria(NOT_NULL,1, "loginId", null));entityContraints.add(new EntityTestCriteria(MIN_MAX,2, "loginId", "BB96cC8tB9xv1mZau1IwZRAQwLYfGrMzQI4JBohpRpMd99UMTpLu0PU2yFUBpIKNOTEGs8RtNs152h1znf2VFCLwDvX2YAbxaoWbvLsD3UbBBl5T4cz3o4KqGJJYWgRLB2ctNX1faHfNSzEkiDvVmFdwX5hHmxFrOVI1uOOJeBrPoJUh8a2Ik6LJdNKk4InUNQ0r9322Z"));entityContraints.add(new EntityTestCriteria(MIN_MAX,3, "serverAuthImage", "fSjUefM74eUM5l31qUol6adU57pH6CBD8"));entityContraints.add(new EntityTestCriteria(MIN_MAX,4, "serverAuthText", "pOdKPM0xw6KqOMTKI"));entityContraints.add(new EntityTestCriteria(MIN_MAX,5, "failedLoginAttempts", 20));entityContraints.add(new EntityTestCriteria(MIN_MAX,6, "isAuthenticated", true));return entityContraints;" --isStatic false [7m[0mbuzzorfield create --type ~.app.shared.appbasicsetup.usermanagement.Login --field_name failedLoginAttempts --dataType java.lang.Integer --Modifier private --valueType String,String --annotation javax.persistence.Column,com.fasterxml.jackson.annotation.JsonProperty --key name.javax.persistence.Column,value.com.fasterxml.jackson.annotation.JsonProperty --value failedLoginAttempts.javax.persistence.Column,failedLoginAttempts.com.fasterxml.jackson.annotation.JsonProperty [7m[0mfieldAnnotation create --type ~.app.shared.appbasicsetup.usermanagement.Login --field_name failedLoginAttempts --valueType integer --annotation javax.validation.constraints.Min --key value.javax.validation.constraints.Min --value "0.javax.validation.constraints.Min" [7m[0mfieldAnnotation create --type ~.app.shared.appbasicsetup.usermanagement.Login --field_name failedLoginAttempts --valueType integer --annotation javax.validation.constraints.Max --key value.javax.validation.constraints.Max --value "11.javax.validation.constraints.Max" [7m[0mmethodoperation type getSetMethod --class ~.app.shared.appbasicsetup.usermanagement.Login --variableName failedLoginAttempts --getterMethod true --setterMethod true failedLoginAttempts failedLoginAttempts failedLoginAttempts failedLoginAttempts return failedLoginAttempts; [7m[0mbuzzormethod add --toClass LoginTestCase --method_name addingListOfFieldForNegativeTesting --modifier private --return_type java.util.List<EntityTestCriteria> --method_body "List<EntityTestCriteria> entityContraints = new java.util.ArrayList<EntityTestCriteria>();entityContraints.add(new EntityTestCriteria(NOT_NULL,1, "loginId", null));entityContraints.add(new EntityTestCriteria(MIN_MAX,2, "loginId", "YQZ2Uf7sdQYaoVM0gVEUjyhW30bMaURDWzfHhz8L8jr5vsY1tFe11dpbL2dxBH5EOwgFc6Q8tsyzg5u0bbo2uo2amQnxrWSLzJCFbz4WaD3kJgOakYiUzELE5rLH1KdwYp3A26PJ2I28D2R7M6O9oWqtKvDxtZPJJi8cf0eiYe3MeWp2Kdq5JG0blHXj7mXFkmmS9G212"));entityContraints.add(new EntityTestCriteria(MIN_MAX,3, "serverAuthImage", "yAGfgTpx1wNY3fgxZCouE8sIbx61s2EoD"));entityContraints.add(new EntityTestCriteria(MIN_MAX,4, "serverAuthText", "dt7dLlTtILnCcUqSB"));entityContraints.add(new EntityTestCriteria(MIN_MAX,5, "failedLoginAttempts", 22));entityContraints.add(new EntityTestCriteria(MIN_MAX,6, "isAuthenticated", true));return entityContraints;" --isStatic false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[7m[0mbuzzormethod add --toClass LoginTestCase --method_name addingListOfFieldForNegativeTesting --modifier private --return_type java.util.List<EntityTestCriteria> --method_body "List<EntityTestCriteria> entityContraints = new java.util.ArrayList<EntityTestCriteria>();entityContraints.add(new EntityTestCriteria(NOT_NULL,1, "loginId", null));entityContraints.add(new EntityTestCriteria(MIN_MAX,2, "loginId", "maf43aneYC06fKjn3xuIn7nCz9gHIugO89RHxKwkFOyoD794CAOMJd15jyXt59wcjmx2T7L6G4dvPDUokI6xwOAlWoxuoZt2h2MmkTWr4DzTjeGqgPTDSfw6lAGXnu7Uh7Nmi7F3e70VJm2svN7BMlFQ7OT7hrJA4nT7mc7ag2RL16B5xJylcbokZXBjOn4z3PAqbrqoC"));entityContraints.add(new EntityTestCriteria(MIN_MAX,3, "serverAuthImage", "LVuknUJnoEQSX7s7C2oEk5XniewRhg9wJ"));entityContraints.add(new EntityTestCriteria(MIN_MAX,4, "serverAuthText", "HCGZH14oXgKPjPQt1"));entityContraints.add(new EntityTestCriteria(MIN_MAX,5, "failedLoginAttempts", 13));entityContraints.add(new EntityTestCriteria(MIN_MAX,6, "isAuthenticated", true));return entityContraints;" --isStatic false
+
+

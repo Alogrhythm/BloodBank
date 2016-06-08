@@ -1,0 +1,47 @@
+Ext.define('Bloodbankapp.bloodbankapp.shared.com.model.bloodbankboundedcontext.bloodbank.BloodResultModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "bloodResultId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "collectedDate",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "expiryDate",
+          "type": "auto",
+          "defaultValue": ""
+     }, {
+          "name": "isTested",
+          "type": "boolean",
+          "defaultValue": ""
+     }, {
+          "name": "noOfUnits",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "donorvisitid",
+          "reference": "DonorVisit",
+          "defaultValue": ""
+     }, {
+          "name": "donor",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});
