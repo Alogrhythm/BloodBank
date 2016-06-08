@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.app.server.service.organization.locationmanagement.LanguageTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-06-08T10:41:04" hostname="d669fb8cdd3c" time="0.283">
+<testsuite name="com.app.server.service.organization.locationmanagement.LanguageTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-06-08T12:28:48" hostname="12d311cb0219" time="0.24">
   <properties/>
-  <testcase name="test1Save" classname="com.app.server.service.organization.locationmanagement.LanguageTestCase" time="0.091"/>
-  <testcase name="test2Update" classname="com.app.server.service.organization.locationmanagement.LanguageTestCase" time="0.051"/>
-  <testcase name="test3FindById" classname="com.app.server.service.organization.locationmanagement.LanguageTestCase" time="0.013"/>
-  <testcase name="test5NegativeTesting" classname="com.app.server.service.organization.locationmanagement.LanguageTestCase" time="0.044"/>
-  <testcase name="test6Delete" classname="com.app.server.service.organization.locationmanagement.LanguageTestCase" time="0.081"/>
-  <system-out><![CDATA[Wed Jun 08 10:41:04 UTC 2016|Log Manager Factory|Initialization Process started.....
-Wed Jun 08 10:41:04 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
-Wed Jun 08 10:41:04 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
-Wed Jun 08 10:41:04 UTC 2016|Alarm Manager|Loading Alarms ......
-Wed Jun 08 10:41:04 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
-Wed Jun 08 10:41:04 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
-Wed Jun 08 10:41:04 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=4/564 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP= A.Map=[645]  E.Map EC/RC=[238/66] )
-Wed Jun 08 10:41:04 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
-Wed Jun 08 10:41:04 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
-Wed Jun 08 10:41:04 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
-Wed Jun 08 10:41:04 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
-Wed Jun 08 10:41:04 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
-Wed Jun 08 10:41:04 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
-Wed Jun 08 10:41:04 UTC 2016|Alarm Manager|Initialized Exception Lookup...
-Wed Jun 08 10:41:04 UTC 2016|Log Manager|Initialize Log Config File ......
-Wed Jun 08 10:41:04 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
-Wed Jun 08 10:41:04 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
-Wed Jun 08 10:41:04 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
-Wed Jun 08 10:41:04 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
-Wed Jun 08 10:41:04 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
-Wed Jun 08 10:41:04 UTC 2016|Log Manager|Loading Default Connector for Logging ......
-Wed Jun 08 10:41:04 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
-Wed Jun 08 10:41:04 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
-Wed Jun 08 10:41:04 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@368b8342] ....
-Wed Jun 08 10:41:04 UTC 2016|Scheduler|Starting the Scheduler ......
-Wed Jun 08 10:41:04 UTC 2016|Scheduler|Adding [LMID=[b79d927c-f182-4350-967c-51a309562ddf]] Delay=5 Time Unit=MINUTES
-Wed Jun 08 10:41:04 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
-Wed Jun 08 10:41:04 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
-Wed Jun 08 10:41:04 UTC 2016|Scheduler|Startup Completed..
-Wed Jun 08 10:41:04 UTC 2016|Log Manager|Initialization Process Complete ......
-Wed Jun 08 10:41:04 UTC 2016|Log Manager Factory|Log Manager READY! ID = b79d927c-f182-4350-967c-51a309562ddf
+  <testcase name="test1Save" classname="com.app.server.service.organization.locationmanagement.LanguageTestCase" time="0.067"/>
+  <testcase name="test2Update" classname="com.app.server.service.organization.locationmanagement.LanguageTestCase" time="0.049"/>
+  <testcase name="test3FindById" classname="com.app.server.service.organization.locationmanagement.LanguageTestCase" time="0.012"/>
+  <testcase name="test5NegativeTesting" classname="com.app.server.service.organization.locationmanagement.LanguageTestCase" time="0.042"/>
+  <testcase name="test6Delete" classname="com.app.server.service.organization.locationmanagement.LanguageTestCase" time="0.069"/>
+  <system-out><![CDATA[Wed Jun 08 12:28:48 UTC 2016|Log Manager Factory|Initialization Process started.....
+Wed Jun 08 12:28:48 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
+Wed Jun 08 12:28:48 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
+Wed Jun 08 12:28:48 UTC 2016|Alarm Manager|Loading Alarms ......
+Wed Jun 08 12:28:48 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
+Wed Jun 08 12:28:48 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
+Wed Jun 08 12:28:48 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=4/564 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP= A.Map=[645]  E.Map EC/RC=[238/66] )
+Wed Jun 08 12:28:48 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
+Wed Jun 08 12:28:48 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
+Wed Jun 08 12:28:48 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
+Wed Jun 08 12:28:48 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
+Wed Jun 08 12:28:48 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
+Wed Jun 08 12:28:48 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
+Wed Jun 08 12:28:48 UTC 2016|Alarm Manager|Initialized Exception Lookup...
+Wed Jun 08 12:28:48 UTC 2016|Log Manager|Initialize Log Config File ......
+Wed Jun 08 12:28:48 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
+Wed Jun 08 12:28:48 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
+Wed Jun 08 12:28:48 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
+Wed Jun 08 12:28:48 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
+Wed Jun 08 12:28:48 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
+Wed Jun 08 12:28:48 UTC 2016|Log Manager|Loading Default Connector for Logging ......
+Wed Jun 08 12:28:48 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
+Wed Jun 08 12:28:48 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
+Wed Jun 08 12:28:48 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@2fbb7f4a] ....
+Wed Jun 08 12:28:48 UTC 2016|Scheduler|Starting the Scheduler ......
+Wed Jun 08 12:28:48 UTC 2016|Scheduler|Adding [LMID=[44537018-dfae-4f4a-ba36-64fda5ff4697]] Delay=5 Time Unit=MINUTES
+Wed Jun 08 12:28:48 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
+Wed Jun 08 12:28:48 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
+Wed Jun 08 12:28:48 UTC 2016|Scheduler|Startup Completed..
+Wed Jun 08 12:28:48 UTC 2016|Log Manager|Initialization Process Complete ......
+Wed Jun 08 12:28:48 UTC 2016|Log Manager Factory|Log Manager READY! ID = 44537018-dfae-4f4a-ba36-64fda5ff4697
 Setting logged in user info for ADD
-[EL Fine]: sql: 2016-06-08 10:41:04.48--ClientSession(1322241436)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Language_M (languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [5935E4F4-5AA6-4BCB-A963-543BDF867857, St, hLJ, sZU5, 3, NIV0YG4OuCdrjryXUmPDOWxTJIMEQgedrWeyX5SDD1tWgzq1VX, 7F7nMXDgfGyblZioNF5T6JIsTBDhWNdtmPz4f8RUgnmW0FVddt, NMabErMQm6A0s5FGfJbQ1d8jq15rkFGj0P8I6mz0sWlMdDNUZa, 7itDxrn1n7uwdLEKvE8gaXNbvVM8p8BP, 1, AAAAA, 2016-06-08 10:41:04.477, AAAAA, 2016-06-08 10:41:04.477, 1, 51000]
-[EL Fine]: sql: 2016-06-08 10:41:04.554--ClientSession(800599897)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE ((activeStatus = ?) AND (languageId = ?))
-	bind => [1, 5935E4F4-5AA6-4BCB-A963-543BDF867857]
+[EL Fine]: sql: 2016-06-08 12:28:48.31--ClientSession(107135954)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Language_M (languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [8B821643-B5D9-4650-ADA3-751CC6A790B1, St, hLJ, sZU5, 3, NIV0YG4OuCdrjryXUmPDOWxTJIMEQgedrWeyX5SDD1tWgzq1VX, 7F7nMXDgfGyblZioNF5T6JIsTBDhWNdtmPz4f8RUgnmW0FVddt, NMabErMQm6A0s5FGfJbQ1d8jq15rkFGj0P8I6mz0sWlMdDNUZa, 7itDxrn1n7uwdLEKvE8gaXNbvVM8p8BP, 1, AAAAA, 2016-06-08 12:28:48.307, AAAAA, 2016-06-08 12:28:48.307, 1, 51000]
+[EL Fine]: sql: 2016-06-08 12:28:48.361--ClientSession(1158841795)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE ((activeStatus = ?) AND (languageId = ?))
+	bind => [1, 8B821643-B5D9-4650-ADA3-751CC6A790B1]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-06-08 10:41:04.559--ClientSession(321832275)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE (languageId = ?)
-	bind => [5935E4F4-5AA6-4BCB-A963-543BDF867857]
-[EL Fine]: sql: 2016-06-08 10:41:04.561--ClientSession(321832275)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--UPDATE ast_Language_M SET alpha2 = ?, alpha3 = ?, alpha4 = ?, alpha4parentid = ?, language = ?, languageDescription = ?, languageIcon = ?, languageType = ?, versionId = ? WHERE ((languageId = ?) AND (versionId = ?))
-	bind => [vg, mXU, 39sd, 11, k4qUzqWrJT4iPsntQoXX2yOe5sZVdddaUL6GsE38hRVjSVFbfv, Sl4poDIkx1Vjox0XtqvJBtc9OVC6dVTBqkY5b4fYosVampCu4q, jbwDk8iipFu16cdZH45y1AuTLnjNEUMcyY1y42vjeaDGTQZ0xu, RFLEEdwaYg2WIcUkCxHykbTdwQtrcQN4, 2, 5935E4F4-5AA6-4BCB-A963-543BDF867857, 1]
-[EL Fine]: sql: 2016-06-08 10:41:04.609--ClientSession(305861074)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE ((activeStatus = ?) AND (languageId = ?))
-	bind => [1, 5935E4F4-5AA6-4BCB-A963-543BDF867857]
-[EL Fine]: sql: 2016-06-08 10:41:04.667--ClientSession(2399620)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE (languageId = ?)
-	bind => [5935E4F4-5AA6-4BCB-A963-543BDF867857]
-[EL Fine]: sql: 2016-06-08 10:41:04.669--ClientSession(2399620)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Language_M WHERE ((languageId = ?) AND (versionId = ?))
-	bind => [5935E4F4-5AA6-4BCB-A963-543BDF867857, 2]
+[EL Fine]: sql: 2016-06-08 12:28:48.366--ClientSession(60149073)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE (languageId = ?)
+	bind => [8B821643-B5D9-4650-ADA3-751CC6A790B1]
+[EL Fine]: sql: 2016-06-08 12:28:48.368--ClientSession(60149073)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--UPDATE ast_Language_M SET alpha2 = ?, alpha3 = ?, alpha4 = ?, alpha4parentid = ?, language = ?, languageDescription = ?, languageIcon = ?, languageType = ?, versionId = ? WHERE ((languageId = ?) AND (versionId = ?))
+	bind => [vg, mXU, 39sd, 11, k4qUzqWrJT4iPsntQoXX2yOe5sZVdddaUL6GsE38hRVjSVFbfv, Sl4poDIkx1Vjox0XtqvJBtc9OVC6dVTBqkY5b4fYosVampCu4q, jbwDk8iipFu16cdZH45y1AuTLnjNEUMcyY1y42vjeaDGTQZ0xu, RFLEEdwaYg2WIcUkCxHykbTdwQtrcQN4, 2, 8B821643-B5D9-4650-ADA3-751CC6A790B1, 1]
+[EL Fine]: sql: 2016-06-08 12:28:48.413--ClientSession(637302460)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE ((activeStatus = ?) AND (languageId = ?))
+	bind => [1, 8B821643-B5D9-4650-ADA3-751CC6A790B1]
+[EL Fine]: sql: 2016-06-08 12:28:48.468--ClientSession(1356349112)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE (languageId = ?)
+	bind => [8B821643-B5D9-4650-ADA3-751CC6A790B1]
+[EL Fine]: sql: 2016-06-08 12:28:48.47--ClientSession(1356349112)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Language_M WHERE ((languageId = ?) AND (versionId = ?))
+	bind => [8B821643-B5D9-4650-ADA3-751CC6A790B1, 2]
 ]]></system-out>
   <system-err><![CDATA[Language.language may not be null
 java.lang.SecurityException: Language.language may not be null

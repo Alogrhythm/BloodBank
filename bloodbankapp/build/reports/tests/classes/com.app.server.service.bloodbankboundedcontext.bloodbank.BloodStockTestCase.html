@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.284s</div>
+<div class="counter">0.320s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,32 +82,32 @@
 </thead>
 <tr>
 <td class="success">test1Save</td>
-<td>0.133s</td>
+<td>0.157s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test2Update</td>
-<td>0.018s</td>
+<td>0.024s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test3FindById</td>
-<td>0.010s</td>
+<td>0.013s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test3findBybloodg</td>
-<td>0.009s</td>
+<td>0.013s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test5NegativeTesting</td>
-<td>0.008s</td>
+<td>0.012s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test6Delete</td>
-<td>0.106s</td>
+<td>0.101s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -115,59 +115,59 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Wed Jun 08 10:40:56 UTC 2016|Log Manager Factory|Initialization Process started.....
-Wed Jun 08 10:40:56 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
-Wed Jun 08 10:40:56 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
-Wed Jun 08 10:40:56 UTC 2016|Alarm Manager|Loading Alarms ......
-Wed Jun 08 10:40:56 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
-Wed Jun 08 10:40:56 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
-Wed Jun 08 10:40:56 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=4/564 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP= A.Map=[645]  E.Map EC/RC=[238/66] )
-Wed Jun 08 10:40:56 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
-Wed Jun 08 10:40:56 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
-Wed Jun 08 10:40:56 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
-Wed Jun 08 10:40:56 UTC 2016|ApplicationAlarmContext| &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; Create App Alarms ....  &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; 
-Wed Jun 08 10:40:56 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
-Wed Jun 08 10:40:56 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
-Wed Jun 08 10:40:56 UTC 2016|Alarm Manager|Initialized Exception Lookup...
-Wed Jun 08 10:40:56 UTC 2016|Log Manager|Initialize Log Config File ......
-Wed Jun 08 10:40:56 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
-Wed Jun 08 10:40:56 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
-Wed Jun 08 10:40:56 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
-Wed Jun 08 10:40:56 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
-Wed Jun 08 10:40:56 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
-Wed Jun 08 10:40:56 UTC 2016|Log Manager|Loading Default Connector for Logging ......
-Wed Jun 08 10:40:56 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
-Wed Jun 08 10:40:56 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
-Wed Jun 08 10:40:56 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@81f40f] ....
-Wed Jun 08 10:40:56 UTC 2016|Scheduler|Starting the Scheduler ......
-Wed Jun 08 10:40:56 UTC 2016|Scheduler|Adding [LMID=[b79d927c-f182-4350-967c-51a309562ddf]] Delay=5 Time Unit=MINUTES
-Wed Jun 08 10:40:56 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
-Wed Jun 08 10:40:56 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
-Wed Jun 08 10:40:56 UTC 2016|Scheduler|Startup Completed..
-Wed Jun 08 10:40:56 UTC 2016|Log Manager|Initialization Process Complete ......
-Wed Jun 08 10:40:56 UTC 2016|Log Manager Factory|Log Manager READY! ID = b79d927c-f182-4350-967c-51a309562ddf
-[EL Fine]: sql: 2016-06-08 10:40:56.959--ClientSession(150716088)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_BloodGroup_M (bloodGroupId, bloodGroups, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [430812D9-2E90-4758-9ED9-261E412DB34A, qEwdCot9PqCiplzurA8A4wV2p5chCSe7povPOP2C25D64ypuja, 1, AAAAA, 2016-06-08 10:40:56.957, AAAAA, 2016-06-08 10:40:56.957, 1, 51000]
+<pre>Wed Jun 08 12:28:40 UTC 2016|Log Manager Factory|Initialization Process started.....
+Wed Jun 08 12:28:40 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
+Wed Jun 08 12:28:40 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
+Wed Jun 08 12:28:40 UTC 2016|Alarm Manager|Loading Alarms ......
+Wed Jun 08 12:28:40 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
+Wed Jun 08 12:28:40 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
+Wed Jun 08 12:28:40 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=4/564 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP= A.Map=[645]  E.Map EC/RC=[238/66] )
+Wed Jun 08 12:28:40 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
+Wed Jun 08 12:28:40 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
+Wed Jun 08 12:28:40 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
+Wed Jun 08 12:28:40 UTC 2016|ApplicationAlarmContext| &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; Create App Alarms ....  &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; 
+Wed Jun 08 12:28:40 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
+Wed Jun 08 12:28:40 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
+Wed Jun 08 12:28:40 UTC 2016|Alarm Manager|Initialized Exception Lookup...
+Wed Jun 08 12:28:40 UTC 2016|Log Manager|Initialize Log Config File ......
+Wed Jun 08 12:28:40 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
+Wed Jun 08 12:28:40 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
+Wed Jun 08 12:28:40 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
+Wed Jun 08 12:28:40 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
+Wed Jun 08 12:28:40 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
+Wed Jun 08 12:28:40 UTC 2016|Log Manager|Loading Default Connector for Logging ......
+Wed Jun 08 12:28:40 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
+Wed Jun 08 12:28:40 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
+Wed Jun 08 12:28:40 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@3992ae89] ....
+Wed Jun 08 12:28:40 UTC 2016|Scheduler|Starting the Scheduler ......
+Wed Jun 08 12:28:40 UTC 2016|Scheduler|Adding [LMID=[44537018-dfae-4f4a-ba36-64fda5ff4697]] Delay=5 Time Unit=MINUTES
+Wed Jun 08 12:28:40 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
+Wed Jun 08 12:28:40 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
+Wed Jun 08 12:28:40 UTC 2016|Scheduler|Startup Completed..
+Wed Jun 08 12:28:40 UTC 2016|Log Manager|Initialization Process Complete ......
+Wed Jun 08 12:28:40 UTC 2016|Log Manager Factory|Log Manager READY! ID = 44537018-dfae-4f4a-ba36-64fda5ff4697
+[EL Fine]: sql: 2016-06-08 12:28:40.211--ClientSession(38041780)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_BloodGroup_M (bloodGroupId, bloodGroups, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [A8FB2515-029B-486D-89C8-783492DD5848, qEwdCot9PqCiplzurA8A4wV2p5chCSe7povPOP2C25D64ypuja, 1, AAAAA, 2016-06-08 12:28:40.207, AAAAA, 2016-06-08 12:28:40.207, 1, 51000]
 Setting logged in user info for ADD
-[EL Fine]: sql: 2016-06-08 10:40:57.022--ClientSession(1861230235)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_BloodStock_T (bloodStockIsd, bloodg, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [25E3E473-7655-4C23-9309-978CFE404F48, 430812D9-2E90-4758-9ED9-261E412DB34A, 2147483647, 1, AAAAA, 2016-06-08 10:40:57.018, AAAAA, 2016-06-08 10:40:57.018, 1, 51000]
-[EL Fine]: sql: 2016-06-08 10:40:57.075--ClientSession(1626098153)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodStockIsd, bloodg, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodStock_T WHERE ((activeStatus = ?) AND (bloodStockIsd = ?))
-	bind =&gt; [1, 25E3E473-7655-4C23-9309-978CFE404F48]
+[EL Fine]: sql: 2016-06-08 12:28:40.284--ClientSession(1420371853)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_BloodStock_T (bloodStockIsd, bloodg, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [F5BD1B5B-67B5-4409-BCE9-95D6A5D3171D, A8FB2515-029B-486D-89C8-783492DD5848, 2147483647, 1, AAAAA, 2016-06-08 12:28:40.279, AAAAA, 2016-06-08 12:28:40.279, 1, 51000]
+[EL Fine]: sql: 2016-06-08 12:28:40.341--ClientSession(647683913)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT bloodStockIsd, bloodg, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodStock_T WHERE ((activeStatus = ?) AND (bloodStockIsd = ?))
+	bind =&gt; [1, F5BD1B5B-67B5-4409-BCE9-95D6A5D3171D]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-06-08 10:40:57.082--ClientSession(814748655)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodStockIsd, bloodg, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodStock_T WHERE (bloodStockIsd = ?)
-	bind =&gt; [25E3E473-7655-4C23-9309-978CFE404F48]
-[EL Fine]: sql: 2016-06-08 10:40:57.093--ClientSession(207574254)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodStockIsd, bloodg, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodStock_T WHERE ((activeStatus = ?) AND (bloodStockIsd = ?))
-	bind =&gt; [1, 25E3E473-7655-4C23-9309-978CFE404F48]
-[EL Fine]: sql: 2016-06-08 10:40:57.102--ClientSession(122012973)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodStockIsd, bloodg, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodStock_T WHERE ((activeStatus = ?) AND (bloodg = ?))
-	bind =&gt; [1, 430812D9-2E90-4758-9ED9-261E412DB34A]
-[EL Fine]: sql: 2016-06-08 10:40:57.118--ClientSession(261159336)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodStockIsd, bloodg, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodStock_T WHERE (bloodStockIsd = ?)
-	bind =&gt; [25E3E473-7655-4C23-9309-978CFE404F48]
-[EL Fine]: sql: 2016-06-08 10:40:57.12--ClientSession(261159336)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_BloodStock_T WHERE ((bloodStockIsd = ?) AND (versionId = ?))
-	bind =&gt; [25E3E473-7655-4C23-9309-978CFE404F48, 1]
-[EL Fine]: sql: 2016-06-08 10:40:57.172--ClientSession(235584397)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodGroupId, bloodGroups, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodGroup_M WHERE (bloodGroupId = ?)
-	bind =&gt; [430812D9-2E90-4758-9ED9-261E412DB34A]
-[EL Fine]: sql: 2016-06-08 10:40:57.174--ClientSession(235584397)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_BloodGroup_M WHERE ((bloodGroupId = ?) AND (versionId = ?))
-	bind =&gt; [430812D9-2E90-4758-9ED9-261E412DB34A, 1]
+[EL Fine]: sql: 2016-06-08 12:28:40.35--ClientSession(1527107005)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT bloodStockIsd, bloodg, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodStock_T WHERE (bloodStockIsd = ?)
+	bind =&gt; [F5BD1B5B-67B5-4409-BCE9-95D6A5D3171D]
+[EL Fine]: sql: 2016-06-08 12:28:40.363--ClientSession(637071965)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT bloodStockIsd, bloodg, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodStock_T WHERE ((activeStatus = ?) AND (bloodStockIsd = ?))
+	bind =&gt; [1, F5BD1B5B-67B5-4409-BCE9-95D6A5D3171D]
+[EL Fine]: sql: 2016-06-08 12:28:40.376--ClientSession(798608358)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT bloodStockIsd, bloodg, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodStock_T WHERE ((activeStatus = ?) AND (bloodg = ?))
+	bind =&gt; [1, A8FB2515-029B-486D-89C8-783492DD5848]
+[EL Fine]: sql: 2016-06-08 12:28:40.4--ClientSession(862308732)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT bloodStockIsd, bloodg, noOfUnits, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodStock_T WHERE (bloodStockIsd = ?)
+	bind =&gt; [F5BD1B5B-67B5-4409-BCE9-95D6A5D3171D]
+[EL Fine]: sql: 2016-06-08 12:28:40.402--ClientSession(862308732)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_BloodStock_T WHERE ((bloodStockIsd = ?) AND (versionId = ?))
+	bind =&gt; [F5BD1B5B-67B5-4409-BCE9-95D6A5D3171D, 1]
+[EL Fine]: sql: 2016-06-08 12:28:40.444--ClientSession(408954817)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT bloodGroupId, bloodGroups, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodGroup_M WHERE (bloodGroupId = ?)
+	bind =&gt; [A8FB2515-029B-486D-89C8-783492DD5848]
+[EL Fine]: sql: 2016-06-08 12:28:40.446--ClientSession(408954817)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_BloodGroup_M WHERE ((bloodGroupId = ?) AND (versionId = ?))
+	bind =&gt; [A8FB2515-029B-486D-89C8-783492DD5848, 1]
 </pre>
 </span>
 </div>
@@ -241,7 +241,7 @@ java.lang.SecurityException: BloodStock.noOfUnits may not be null
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Jun 8, 2016 10:41:08 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jun 8, 2016 12:28:51 PM</p>
 </div>
 </div>
 </body>

@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.936s</div>
+<div class="counter">0.661s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,47 +82,47 @@
 </thead>
 <tr>
 <td class="success">test1Save</td>
-<td>0.487s</td>
+<td>0.282s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test2Update</td>
-<td>0.066s</td>
+<td>0.049s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test3FindById</td>
-<td>0.011s</td>
+<td>0.014s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test3findByaddressTypeId</td>
-<td>0.011s</td>
+<td>0.014s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test3findBycityId</td>
-<td>0.011s</td>
+<td>0.014s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test3findBycountryId</td>
-<td>0.010s</td>
+<td>0.013s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test3findBystateId</td>
-<td>0.011s</td>
+<td>0.012s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test5NegativeTesting</td>
-<td>0.026s</td>
+<td>0.035s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test6Delete</td>
-<td>0.303s</td>
+<td>0.228s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -130,85 +130,85 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>Wed Jun 08 10:41:05 UTC 2016|Log Manager Factory|Initialization Process started.....
-Wed Jun 08 10:41:05 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
-Wed Jun 08 10:41:05 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
-Wed Jun 08 10:41:05 UTC 2016|Alarm Manager|Loading Alarms ......
-Wed Jun 08 10:41:05 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
-Wed Jun 08 10:41:05 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
-Wed Jun 08 10:41:05 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=4/564 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP= A.Map=[645]  E.Map EC/RC=[238/66] )
-Wed Jun 08 10:41:05 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
-Wed Jun 08 10:41:05 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
-Wed Jun 08 10:41:05 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
-Wed Jun 08 10:41:05 UTC 2016|ApplicationAlarmContext| &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; Create App Alarms ....  &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; 
-Wed Jun 08 10:41:05 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
-Wed Jun 08 10:41:05 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
-Wed Jun 08 10:41:05 UTC 2016|Alarm Manager|Initialized Exception Lookup...
-Wed Jun 08 10:41:05 UTC 2016|Log Manager|Initialize Log Config File ......
-Wed Jun 08 10:41:05 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
-Wed Jun 08 10:41:05 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
-Wed Jun 08 10:41:05 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
-Wed Jun 08 10:41:05 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
-Wed Jun 08 10:41:05 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
-Wed Jun 08 10:41:05 UTC 2016|Log Manager|Loading Default Connector for Logging ......
-Wed Jun 08 10:41:05 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
-Wed Jun 08 10:41:05 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
-Wed Jun 08 10:41:05 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@383ad538] ....
-Wed Jun 08 10:41:05 UTC 2016|Scheduler|Starting the Scheduler ......
-Wed Jun 08 10:41:05 UTC 2016|Scheduler|Adding [LMID=[b79d927c-f182-4350-967c-51a309562ddf]] Delay=5 Time Unit=MINUTES
-Wed Jun 08 10:41:05 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
-Wed Jun 08 10:41:05 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
-Wed Jun 08 10:41:05 UTC 2016|Scheduler|Startup Completed..
-Wed Jun 08 10:41:05 UTC 2016|Log Manager|Initialization Process Complete ......
-Wed Jun 08 10:41:05 UTC 2016|Log Manager Factory|Log Manager READY! ID = b79d927c-f182-4350-967c-51a309562ddf
-[EL Fine]: sql: 2016-06-08 10:41:05.884--ClientSession(677191874)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [29161C97-3A50-4C85-B11F-D356914BF42C, R9JZ4LBdlB1hEUqgfDCDuzSrFo2keA7j, 2, 9, bd1, IYg, xKIB4IoJSJPOtzh1ZlIeVUb7zJ9qt37yms99vPzeakLu8xeg2C, 3jneFlzSsryhFUpqMscSULWUffRLHKfBziTAcSMDyzumY2uFcJ, 8Lr, Iqz7Deez5VDeVw22BgYcATRHvMhq1QseDP92HHfuNIay3iu5DL, kGAZEpsmu0PvnuQm4ABNf218Kfsb6WIc, 200, 1, AAAAA, 2016-06-08 10:41:05.881, AAAAA, 2016-06-08 10:41:05.881, 1, 51000]
-[EL Fine]: sql: 2016-06-08 10:41:06.111--ClientSession(884330299)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AddressType_M (addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [AF37417D-1E72-433A-B370-1EC7E653DE23, DlYzlO4fTT2AgtteLH1hOx7ordMISAtrjVjqoWmP5qlAXtVoY1, ZiEMZwtK8pI8D5Aw0TZC8zqW4bp9oDeQ3uIR901PJZVmz9aDG0, lJl03ItWaNlvEftaaPgrtvHMgn2eOSxhExfnv84XQ2SB7FTged, 1, AAAAA, 2016-06-08 10:41:06.107, AAAAA, 2016-06-08 10:41:06.107, 1, 51000]
-[EL Fine]: sql: 2016-06-08 10:41:06.187--ClientSession(180075279)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_State_M (stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [73E71FAB-8147-4945-B854-ED654AB5ECBF, 29161C97-3A50-4C85-B11F-D356914BF42C, VFSRaQSyuGcblbwetNIVvTHF5BlmaMr9AJ2BzBQiZm4iwcUa9u, 1, 4, 2, s2ADHb5tt8BoNlum5Z8Sm2Mjxm2tkvjT, G1EOZ5ZMfluGwVOuUr7wMPSJ6HDM0Yvb, Gw8QaP5NP9Sgl4eaE9RnD9bQg56LRnPFORQwNjiKt3QRPgq51I, llT2VkSotZgHWBTfOlYnUh3NrlXWM0xJlCp8qv10yngFvWCJLV, vdPUAsaTyEVcoDWLw4IyGrNzDmNBs8rlwh9Eke6H3GsFAmlZub, 1, AAAAA, 2016-06-08 10:41:06.181, AAAAA, 2016-06-08 10:41:06.181, 1, 51000]
-[EL Fine]: sql: 2016-06-08 10:41:06.278--ClientSession(1692008962)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_City_M (cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [2DB63930-205F-4C99-888E-204B755D5FD2, 1, lSnyHx5GcxjVMgnIL5wYURL1SGjBPPwd, sTCugRIWlYgJCLlvb57mvt0MfPUSglSFJyMFP3FtrGH0c3i4Le, daBiLjlKASpt4unyrpCpbrPMzBUFGewrEFdrA2LY6543oCAQBA, 3, 5, JBejIs6nQqabbC6HECL0JAYtBYKKuUBr5ZlnfEqUKPKeFuGA2X, 29161C97-3A50-4C85-B11F-D356914BF42C, 73E71FAB-8147-4945-B854-ED654AB5ECBF, 1, AAAAA, 2016-06-08 10:41:06.181, AAAAA, 2016-06-08 10:41:06.181, 1, 51000]
+<pre>Wed Jun 08 12:28:49 UTC 2016|Log Manager Factory|Initialization Process started.....
+Wed Jun 08 12:28:49 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
+Wed Jun 08 12:28:49 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
+Wed Jun 08 12:28:49 UTC 2016|Alarm Manager|Loading Alarms ......
+Wed Jun 08 12:28:49 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
+Wed Jun 08 12:28:49 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
+Wed Jun 08 12:28:49 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=4/564 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP= A.Map=[645]  E.Map EC/RC=[238/66] )
+Wed Jun 08 12:28:49 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
+Wed Jun 08 12:28:49 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
+Wed Jun 08 12:28:49 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
+Wed Jun 08 12:28:49 UTC 2016|ApplicationAlarmContext| &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; Create App Alarms ....  &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt; 
+Wed Jun 08 12:28:49 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
+Wed Jun 08 12:28:49 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
+Wed Jun 08 12:28:49 UTC 2016|Alarm Manager|Initialized Exception Lookup...
+Wed Jun 08 12:28:49 UTC 2016|Log Manager|Initialize Log Config File ......
+Wed Jun 08 12:28:49 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
+Wed Jun 08 12:28:49 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
+Wed Jun 08 12:28:49 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
+Wed Jun 08 12:28:49 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
+Wed Jun 08 12:28:49 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
+Wed Jun 08 12:28:49 UTC 2016|Log Manager|Loading Default Connector for Logging ......
+Wed Jun 08 12:28:49 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
+Wed Jun 08 12:28:49 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
+Wed Jun 08 12:28:49 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@74f50938] ....
+Wed Jun 08 12:28:49 UTC 2016|Scheduler|Starting the Scheduler ......
+Wed Jun 08 12:28:49 UTC 2016|Scheduler|Adding [LMID=[44537018-dfae-4f4a-ba36-64fda5ff4697]] Delay=5 Time Unit=MINUTES
+Wed Jun 08 12:28:49 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
+Wed Jun 08 12:28:49 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
+Wed Jun 08 12:28:49 UTC 2016|Scheduler|Startup Completed..
+Wed Jun 08 12:28:49 UTC 2016|Log Manager|Initialization Process Complete ......
+Wed Jun 08 12:28:49 UTC 2016|Log Manager Factory|Log Manager READY! ID = 44537018-dfae-4f4a-ba36-64fda5ff4697
+[EL Fine]: sql: 2016-06-08 12:28:49.57--ClientSession(1759176786)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [46B3935C-D65D-4E00-B160-84D33B3516E9, R9JZ4LBdlB1hEUqgfDCDuzSrFo2keA7j, 2, 9, bd1, IYg, xKIB4IoJSJPOtzh1ZlIeVUb7zJ9qt37yms99vPzeakLu8xeg2C, 3jneFlzSsryhFUpqMscSULWUffRLHKfBziTAcSMDyzumY2uFcJ, 8Lr, Iqz7Deez5VDeVw22BgYcATRHvMhq1QseDP92HHfuNIay3iu5DL, kGAZEpsmu0PvnuQm4ABNf218Kfsb6WIc, 200, 1, AAAAA, 2016-06-08 12:28:49.567, AAAAA, 2016-06-08 12:28:49.567, 1, 51000]
+[EL Fine]: sql: 2016-06-08 12:28:49.629--ClientSession(869617507)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AddressType_M (addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [AC00B76D-2507-4E64-9645-E3635660E671, DlYzlO4fTT2AgtteLH1hOx7ordMISAtrjVjqoWmP5qlAXtVoY1, ZiEMZwtK8pI8D5Aw0TZC8zqW4bp9oDeQ3uIR901PJZVmz9aDG0, lJl03ItWaNlvEftaaPgrtvHMgn2eOSxhExfnv84XQ2SB7FTged, 1, AAAAA, 2016-06-08 12:28:49.626, AAAAA, 2016-06-08 12:28:49.626, 1, 51000]
+[EL Fine]: sql: 2016-06-08 12:28:49.68--ClientSession(387805822)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_State_M (stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [7A6566C6-304A-4A46-A3A1-6EDE97212BB2, 46B3935C-D65D-4E00-B160-84D33B3516E9, VFSRaQSyuGcblbwetNIVvTHF5BlmaMr9AJ2BzBQiZm4iwcUa9u, 1, 4, 2, s2ADHb5tt8BoNlum5Z8Sm2Mjxm2tkvjT, G1EOZ5ZMfluGwVOuUr7wMPSJ6HDM0Yvb, Gw8QaP5NP9Sgl4eaE9RnD9bQg56LRnPFORQwNjiKt3QRPgq51I, llT2VkSotZgHWBTfOlYnUh3NrlXWM0xJlCp8qv10yngFvWCJLV, vdPUAsaTyEVcoDWLw4IyGrNzDmNBs8rlwh9Eke6H3GsFAmlZub, 1, AAAAA, 2016-06-08 12:28:49.675, AAAAA, 2016-06-08 12:28:49.675, 1, 51000]
+[EL Fine]: sql: 2016-06-08 12:28:49.729--ClientSession(1609794276)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_City_M (cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [5CE386AA-A683-4062-BDCC-65A942A39026, 1, lSnyHx5GcxjVMgnIL5wYURL1SGjBPPwd, sTCugRIWlYgJCLlvb57mvt0MfPUSglSFJyMFP3FtrGH0c3i4Le, daBiLjlKASpt4unyrpCpbrPMzBUFGewrEFdrA2LY6543oCAQBA, 3, 5, JBejIs6nQqabbC6HECL0JAYtBYKKuUBr5ZlnfEqUKPKeFuGA2X, 46B3935C-D65D-4E00-B160-84D33B3516E9, 7A6566C6-304A-4A46-A3A1-6EDE97212BB2, 1, AAAAA, 2016-06-08 12:28:49.675, AAAAA, 2016-06-08 12:28:49.675, 1, 51000]
 Setting logged in user info for ADD
-[EL Fine]: sql: 2016-06-08 10:41:06.311--ClientSession(1502109090)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Address_T (addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind =&gt; [7FBD9EE2-AA1A-4A24-8423-4796BF44CD00, Oy584wLok2Lsduu5mIMvXl2plzDykervWe6Q2iGC1xu1TsaX0k, 3EotKOdRCLr9jpqH0eKM4j7wWeYs2uykDdpL39PE34w37bgPad, euB71apUiDMo75DTj7fJ4ZvG3pJCI0612B8lP3G28UTA3bw5mT, rwagZYZ1Eyk, AF37417D-1E72-433A-B370-1EC7E653DE23, 2DB63930-205F-4C99-888E-204B755D5FD2, 29161C97-3A50-4C85-B11F-D356914BF42C, tUDRqvOavpozK9EG909fsdqH8pwr1IrrrToVdQFt7lbpNyUfpb, C4iFbNATwHoo71I6ifrDzhLNNkFGKfgHmGh06FXQlzgxcO1Vqq, 73E71FAB-8147-4945-B854-ED654AB5ECBF, 1, C1GOpp, AAAAA, 2016-06-08 10:41:06.306, AAAAA, 2016-06-08 10:41:06.306, 1, 51000]
-[EL Fine]: sql: 2016-06-08 10:41:06.352--ClientSession(1224767700)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (addressId = ?))
-	bind =&gt; [1, 7FBD9EE2-AA1A-4A24-8423-4796BF44CD00]
+[EL Fine]: sql: 2016-06-08 12:28:49.778--ClientSession(1962896447)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Address_T (addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [09C58820-B4F8-4A9F-8319-FD806653B249, Oy584wLok2Lsduu5mIMvXl2plzDykervWe6Q2iGC1xu1TsaX0k, 3EotKOdRCLr9jpqH0eKM4j7wWeYs2uykDdpL39PE34w37bgPad, euB71apUiDMo75DTj7fJ4ZvG3pJCI0612B8lP3G28UTA3bw5mT, rwagZYZ1Eyk, AC00B76D-2507-4E64-9645-E3635660E671, 5CE386AA-A683-4062-BDCC-65A942A39026, 46B3935C-D65D-4E00-B160-84D33B3516E9, tUDRqvOavpozK9EG909fsdqH8pwr1IrrrToVdQFt7lbpNyUfpb, C4iFbNATwHoo71I6ifrDzhLNNkFGKfgHmGh06FXQlzgxcO1Vqq, 7A6566C6-304A-4A46-A3A1-6EDE97212BB2, 1, C1GOpp, AAAAA, 2016-06-08 12:28:49.773, AAAAA, 2016-06-08 12:28:49.773, 1, 51000]
+[EL Fine]: sql: 2016-06-08 12:28:49.835--ClientSession(546503939)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (addressId = ?))
+	bind =&gt; [1, 09C58820-B4F8-4A9F-8319-FD806653B249]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-06-08 10:41:06.363--ClientSession(1091913589)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE (addressId = ?)
-	bind =&gt; [7FBD9EE2-AA1A-4A24-8423-4796BF44CD00]
-[EL Fine]: sql: 2016-06-08 10:41:06.366--ClientSession(1091913589)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--UPDATE ast_Address_T SET address1 = ?, address2 = ?, address3 = ?, addressLabel = ?, latitude = ?, longitude = ?, zipcode = ?, versionId = ? WHERE ((addressId = ?) AND (versionId = ?))
-	bind =&gt; [l2RcL0bpiACW8ASZxTRXiEqD4OgioDEMvooo0zlknpvDLmDi5E, RmnlRUvzEwS4jeJXBSnSVJydfuL7dL9AOVYuduxCRgXCobW0en, xzAnoySZg6RI9RkBj2xM6XttKDs3LP4rjqmDE0EvlXWkPbc1RZ, hazZi82dtdT, fmrSyOqwTQSQfzXmfLw1YxplFfkWI734Q0XZVoWxILhSsmbzLX, RHTh386MHpEiJNBSQYcAGOXGzZD5EkySyOd68DOrqciQ8Jh81O, 1aiqUY, 2, 7FBD9EE2-AA1A-4A24-8423-4796BF44CD00, 1]
-[EL Fine]: sql: 2016-06-08 10:41:06.416--ClientSession(849293726)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (addressId = ?))
-	bind =&gt; [1, 7FBD9EE2-AA1A-4A24-8423-4796BF44CD00]
-[EL Fine]: sql: 2016-06-08 10:41:06.428--ClientSession(1708907209)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (addressTypeId = ?))
-	bind =&gt; [1, AF37417D-1E72-433A-B370-1EC7E653DE23]
-[EL Fine]: sql: 2016-06-08 10:41:06.439--ClientSession(209025488)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (cityId = ?))
-	bind =&gt; [1, 2DB63930-205F-4C99-888E-204B755D5FD2]
-[EL Fine]: sql: 2016-06-08 10:41:06.45--ClientSession(743536825)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (countryId = ?))
-	bind =&gt; [1, 29161C97-3A50-4C85-B11F-D356914BF42C]
-[EL Fine]: sql: 2016-06-08 10:41:06.462--ClientSession(96983531)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (stateId = ?))
-	bind =&gt; [1, 73E71FAB-8147-4945-B854-ED654AB5ECBF]
-[EL Fine]: sql: 2016-06-08 10:41:06.5--ClientSession(349212765)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE (addressId = ?)
-	bind =&gt; [7FBD9EE2-AA1A-4A24-8423-4796BF44CD00]
-[EL Fine]: sql: 2016-06-08 10:41:06.502--ClientSession(349212765)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Address_T WHERE ((addressId = ?) AND (versionId = ?))
-	bind =&gt; [7FBD9EE2-AA1A-4A24-8423-4796BF44CD00, 2]
-[EL Fine]: sql: 2016-06-08 10:41:06.561--ClientSession(1854305060)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_City_M WHERE (cityId = ?)
-	bind =&gt; [2DB63930-205F-4C99-888E-204B755D5FD2]
-[EL Fine]: sql: 2016-06-08 10:41:06.563--ClientSession(1854305060)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_City_M WHERE ((cityId = ?) AND (versionId = ?))
-	bind =&gt; [2DB63930-205F-4C99-888E-204B755D5FD2, 1]
-[EL Fine]: sql: 2016-06-08 10:41:06.62--ClientSession(1739372626)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_State_M WHERE (stateId = ?)
-	bind =&gt; [73E71FAB-8147-4945-B854-ED654AB5ECBF]
-[EL Fine]: sql: 2016-06-08 10:41:06.622--ClientSession(1739372626)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_State_M WHERE ((stateId = ?) AND (versionId = ?))
-	bind =&gt; [73E71FAB-8147-4945-B854-ED654AB5ECBF, 1]
-[EL Fine]: sql: 2016-06-08 10:41:06.694--ClientSession(1288473735)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE (addressTypeId = ?)
-	bind =&gt; [AF37417D-1E72-433A-B370-1EC7E653DE23]
-[EL Fine]: sql: 2016-06-08 10:41:06.696--ClientSession(1288473735)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AddressType_M WHERE ((addressTypeId = ?) AND (versionId = ?))
-	bind =&gt; [AF37417D-1E72-433A-B370-1EC7E653DE23, 1]
-[EL Fine]: sql: 2016-06-08 10:41:06.744--ClientSession(2015514531)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
-	bind =&gt; [29161C97-3A50-4C85-B11F-D356914BF42C]
-[EL Fine]: sql: 2016-06-08 10:41:06.746--ClientSession(2015514531)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Country_M WHERE ((countryId = ?) AND (versionId = ?))
-	bind =&gt; [29161C97-3A50-4C85-B11F-D356914BF42C, 1]
+[EL Fine]: sql: 2016-06-08 12:28:49.843--ClientSession(884330299)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE (addressId = ?)
+	bind =&gt; [09C58820-B4F8-4A9F-8319-FD806653B249]
+[EL Fine]: sql: 2016-06-08 12:28:49.845--ClientSession(884330299)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--UPDATE ast_Address_T SET address1 = ?, address2 = ?, address3 = ?, addressLabel = ?, latitude = ?, longitude = ?, zipcode = ?, versionId = ? WHERE ((addressId = ?) AND (versionId = ?))
+	bind =&gt; [l2RcL0bpiACW8ASZxTRXiEqD4OgioDEMvooo0zlknpvDLmDi5E, RmnlRUvzEwS4jeJXBSnSVJydfuL7dL9AOVYuduxCRgXCobW0en, xzAnoySZg6RI9RkBj2xM6XttKDs3LP4rjqmDE0EvlXWkPbc1RZ, hazZi82dtdT, fmrSyOqwTQSQfzXmfLw1YxplFfkWI734Q0XZVoWxILhSsmbzLX, RHTh386MHpEiJNBSQYcAGOXGzZD5EkySyOd68DOrqciQ8Jh81O, 1aiqUY, 2, 09C58820-B4F8-4A9F-8319-FD806653B249, 1]
+[EL Fine]: sql: 2016-06-08 12:28:49.884--ClientSession(756863687)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (addressId = ?))
+	bind =&gt; [1, 09C58820-B4F8-4A9F-8319-FD806653B249]
+[EL Fine]: sql: 2016-06-08 12:28:49.899--ClientSession(447010534)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (addressTypeId = ?))
+	bind =&gt; [1, AC00B76D-2507-4E64-9645-E3635660E671]
+[EL Fine]: sql: 2016-06-08 12:28:49.913--ClientSession(1908884754)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (cityId = ?))
+	bind =&gt; [1, 5CE386AA-A683-4062-BDCC-65A942A39026]
+[EL Fine]: sql: 2016-06-08 12:28:49.926--ClientSession(189361306)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (countryId = ?))
+	bind =&gt; [1, 46B3935C-D65D-4E00-B160-84D33B3516E9]
+[EL Fine]: sql: 2016-06-08 12:28:49.938--ClientSession(1584297195)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE ((activeStatus = ?) AND (stateId = ?))
+	bind =&gt; [1, 7A6566C6-304A-4A46-A3A1-6EDE97212BB2]
+[EL Fine]: sql: 2016-06-08 12:28:49.988--ClientSession(1086367899)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE (addressId = ?)
+	bind =&gt; [09C58820-B4F8-4A9F-8319-FD806653B249]
+[EL Fine]: sql: 2016-06-08 12:28:49.99--ClientSession(1086367899)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Address_T WHERE ((addressId = ?) AND (versionId = ?))
+	bind =&gt; [09C58820-B4F8-4A9F-8319-FD806653B249, 2]
+[EL Fine]: sql: 2016-06-08 12:28:50.038--ClientSession(396841698)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_City_M WHERE (cityId = ?)
+	bind =&gt; [5CE386AA-A683-4062-BDCC-65A942A39026]
+[EL Fine]: sql: 2016-06-08 12:28:50.04--ClientSession(396841698)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_City_M WHERE ((cityId = ?) AND (versionId = ?))
+	bind =&gt; [5CE386AA-A683-4062-BDCC-65A942A39026, 1]
+[EL Fine]: sql: 2016-06-08 12:28:50.088--ClientSession(1326293215)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_State_M WHERE (stateId = ?)
+	bind =&gt; [7A6566C6-304A-4A46-A3A1-6EDE97212BB2]
+[EL Fine]: sql: 2016-06-08 12:28:50.09--ClientSession(1326293215)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_State_M WHERE ((stateId = ?) AND (versionId = ?))
+	bind =&gt; [7A6566C6-304A-4A46-A3A1-6EDE97212BB2, 1]
+[EL Fine]: sql: 2016-06-08 12:28:50.14--ClientSession(672602259)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE (addressTypeId = ?)
+	bind =&gt; [AC00B76D-2507-4E64-9645-E3635660E671]
+[EL Fine]: sql: 2016-06-08 12:28:50.142--ClientSession(672602259)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AddressType_M WHERE ((addressTypeId = ?) AND (versionId = ?))
+	bind =&gt; [AC00B76D-2507-4E64-9645-E3635660E671, 1]
+[EL Fine]: sql: 2016-06-08 12:28:50.173--ClientSession(1397738099)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
+	bind =&gt; [46B3935C-D65D-4E00-B160-84D33B3516E9]
+[EL Fine]: sql: 2016-06-08 12:28:50.175--ClientSession(1397738099)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Country_M WHERE ((countryId = ?) AND (versionId = ?))
+	bind =&gt; [46B3935C-D65D-4E00-B160-84D33B3516E9, 1]
 </pre>
 </span>
 </div>
@@ -658,7 +658,7 @@ java.lang.SecurityException: Address.longitude size must be between 0 and 64
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at Jun 8, 2016 10:41:08 AM</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jun 8, 2016 12:28:51 PM</p>
 </div>
 </div>
 </body>

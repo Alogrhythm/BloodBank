@@ -600,7 +600,7 @@ Ext.define('Bloodbankapp.bloodbankapp.web.com.view.bloodbankboundedcontext.blood
                "isAccordionPane": true,
                "isAccordionLayoutItem": true,
                "dockedItems": [],
-               "collapsed": false,
+               "collapsed": true,
                "allowModify": true,
                "collapsible": true,
                "titleCollapse": true,

@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodRequestTestCase" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-06-08T10:40:58" hostname="d669fb8cdd3c" time="0.351">
+<testsuite name="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodRequestTestCase" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-06-08T12:28:41" hostname="12d311cb0219" time="0.335">
   <properties/>
-  <testcase name="test1Save" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodRequestTestCase" time="0.131"/>
-  <testcase name="test2Update" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodRequestTestCase" time="0.05"/>
+  <testcase name="test1Save" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodRequestTestCase" time="0.115"/>
+  <testcase name="test2Update" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodRequestTestCase" time="0.048"/>
   <testcase name="test3FindById" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodRequestTestCase" time="0.008"/>
-  <testcase name="test3findBybldg" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodRequestTestCase" time="0.012"/>
-  <testcase name="test5NegativeTesting" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodRequestTestCase" time="0.047"/>
-  <testcase name="test6Delete" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodRequestTestCase" time="0.102"/>
-  <system-out><![CDATA[Wed Jun 08 10:40:58 UTC 2016|Log Manager Factory|Initialization Process started.....
-Wed Jun 08 10:40:58 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
-Wed Jun 08 10:40:58 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
-Wed Jun 08 10:40:58 UTC 2016|Alarm Manager|Loading Alarms ......
-Wed Jun 08 10:40:58 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
-Wed Jun 08 10:40:58 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
-Wed Jun 08 10:40:58 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=4/564 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP= A.Map=[645]  E.Map EC/RC=[238/66] )
-Wed Jun 08 10:40:58 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
-Wed Jun 08 10:40:58 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
-Wed Jun 08 10:40:58 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
-Wed Jun 08 10:40:58 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
-Wed Jun 08 10:40:58 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
-Wed Jun 08 10:40:58 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
-Wed Jun 08 10:40:58 UTC 2016|Alarm Manager|Initialized Exception Lookup...
-Wed Jun 08 10:40:58 UTC 2016|Log Manager|Initialize Log Config File ......
-Wed Jun 08 10:40:58 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
-Wed Jun 08 10:40:58 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
-Wed Jun 08 10:40:58 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
-Wed Jun 08 10:40:58 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
-Wed Jun 08 10:40:58 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
-Wed Jun 08 10:40:58 UTC 2016|Log Manager|Loading Default Connector for Logging ......
-Wed Jun 08 10:40:58 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
-Wed Jun 08 10:40:58 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
-Wed Jun 08 10:40:58 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@2b216ab6] ....
-Wed Jun 08 10:40:58 UTC 2016|Scheduler|Starting the Scheduler ......
-Wed Jun 08 10:40:58 UTC 2016|Scheduler|Adding [LMID=[b79d927c-f182-4350-967c-51a309562ddf]] Delay=5 Time Unit=MINUTES
-Wed Jun 08 10:40:58 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
-Wed Jun 08 10:40:58 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
-Wed Jun 08 10:40:58 UTC 2016|Scheduler|Startup Completed..
-Wed Jun 08 10:40:58 UTC 2016|Log Manager|Initialization Process Complete ......
-Wed Jun 08 10:40:58 UTC 2016|Log Manager Factory|Log Manager READY! ID = b79d927c-f182-4350-967c-51a309562ddf
-[EL Fine]: sql: 2016-06-08 10:40:58.578--ClientSession(1956965335)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_BloodGroup_M (bloodGroupId, bloodGroups, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [CE8ED7B8-C3DD-4B3A-905D-DE840B3EFA1A, oLgKIkyN3V1VnF894VeNnFuSp8hx2kI0OEL9gjW2kbLPPpyg1S, 1, AAAAA, 2016-06-08 10:40:58.576, AAAAA, 2016-06-08 10:40:58.576, 1, 51000]
+  <testcase name="test3findBybldg" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodRequestTestCase" time="0.008"/>
+  <testcase name="test5NegativeTesting" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodRequestTestCase" time="0.041"/>
+  <testcase name="test6Delete" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.BloodRequestTestCase" time="0.112"/>
+  <system-out><![CDATA[Wed Jun 08 12:28:41 UTC 2016|Log Manager Factory|Initialization Process started.....
+Wed Jun 08 12:28:41 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
+Wed Jun 08 12:28:41 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
+Wed Jun 08 12:28:41 UTC 2016|Alarm Manager|Loading Alarms ......
+Wed Jun 08 12:28:41 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
+Wed Jun 08 12:28:41 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
+Wed Jun 08 12:28:41 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=4/564 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP= A.Map=[645]  E.Map EC/RC=[238/66] )
+Wed Jun 08 12:28:41 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
+Wed Jun 08 12:28:41 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
+Wed Jun 08 12:28:41 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
+Wed Jun 08 12:28:41 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
+Wed Jun 08 12:28:41 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
+Wed Jun 08 12:28:41 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
+Wed Jun 08 12:28:41 UTC 2016|Alarm Manager|Initialized Exception Lookup...
+Wed Jun 08 12:28:41 UTC 2016|Log Manager|Initialize Log Config File ......
+Wed Jun 08 12:28:41 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
+Wed Jun 08 12:28:41 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
+Wed Jun 08 12:28:41 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
+Wed Jun 08 12:28:41 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
+Wed Jun 08 12:28:41 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
+Wed Jun 08 12:28:41 UTC 2016|Log Manager|Loading Default Connector for Logging ......
+Wed Jun 08 12:28:41 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
+Wed Jun 08 12:28:41 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
+Wed Jun 08 12:28:41 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@161a81c2] ....
+Wed Jun 08 12:28:41 UTC 2016|Scheduler|Starting the Scheduler ......
+Wed Jun 08 12:28:41 UTC 2016|Scheduler|Adding [LMID=[44537018-dfae-4f4a-ba36-64fda5ff4697]] Delay=5 Time Unit=MINUTES
+Wed Jun 08 12:28:41 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
+Wed Jun 08 12:28:41 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
+Wed Jun 08 12:28:41 UTC 2016|Scheduler|Startup Completed..
+Wed Jun 08 12:28:41 UTC 2016|Log Manager|Initialization Process Complete ......
+Wed Jun 08 12:28:41 UTC 2016|Log Manager Factory|Log Manager READY! ID = 44537018-dfae-4f4a-ba36-64fda5ff4697
+[EL Fine]: sql: 2016-06-08 12:28:41.979--ClientSession(1987076979)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_BloodGroup_M (bloodGroupId, bloodGroups, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [ECF2A528-E1F9-4D9E-8E02-45DA4FC49E37, oLgKIkyN3V1VnF894VeNnFuSp8hx2kI0OEL9gjW2kbLPPpyg1S, 1, AAAAA, 2016-06-08 12:28:41.976, AAAAA, 2016-06-08 12:28:41.976, 1, 51000]
 Setting logged in user info for ADD
-[EL Fine]: sql: 2016-06-08 10:40:58.652--ClientSession(910094761)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_BloodRequest_T (bloodRequestId, bldg, dateNeededBy, dispatchedToPatientOn, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [3B03C36C-4075-4C8F-9A8C-7F829992E74E, CE8ED7B8-C3DD-4B3A-905D-DE840B3EFA1A, 2016-06-08 09:26:59.104, 2016-06-08 09:26:59.104, 2147483647, p4D74yx0ARqQ3K8pfWzTYq9qaRePN7iSkHcL2FQne09RRmo6xk, qORnIr7gSjdj1rIJtJHz68WYXV2k5tc9tyGk2RotptTXoDTt6o, urB8TluCbylgTLdDBlZCuWphu0LIrA27bj5VitJggMLnbv3XUS, 1, AAAAA, 2016-06-08 10:40:58.648, AAAAA, 2016-06-08 10:40:58.648, 1, 51000]
-[EL Fine]: sql: 2016-06-08 10:40:58.688--ClientSession(637963761)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bldg, dateNeededBy, dispatchedToPatientOn, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE ((activeStatus = ?) AND (bloodRequestId = ?))
-	bind => [1, 3B03C36C-4075-4C8F-9A8C-7F829992E74E]
+[EL Fine]: sql: 2016-06-08 12:28:42.016--ClientSession(1153049289)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_BloodRequest_T (bloodRequestId, bldg, dateNeededBy, dispatchedToPatientOn, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [82AF7983-2AD7-4B14-BF6D-5D652ABC76B2, ECF2A528-E1F9-4D9E-8E02-45DA4FC49E37, 2016-06-08 09:26:59.104, 2016-06-08 09:26:59.104, 2147483647, p4D74yx0ARqQ3K8pfWzTYq9qaRePN7iSkHcL2FQne09RRmo6xk, qORnIr7gSjdj1rIJtJHz68WYXV2k5tc9tyGk2RotptTXoDTt6o, urB8TluCbylgTLdDBlZCuWphu0LIrA27bj5VitJggMLnbv3XUS, 1, AAAAA, 2016-06-08 12:28:42.011, AAAAA, 2016-06-08 12:28:42.011, 1, 51000]
+[EL Fine]: sql: 2016-06-08 12:28:42.068--ClientSession(1589981629)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bldg, dateNeededBy, dispatchedToPatientOn, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE ((activeStatus = ?) AND (bloodRequestId = ?))
+	bind => [1, 82AF7983-2AD7-4B14-BF6D-5D652ABC76B2]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-06-08 10:40:58.694--ClientSession(1563379805)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bldg, dateNeededBy, dispatchedToPatientOn, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE (bloodRequestId = ?)
-	bind => [3B03C36C-4075-4C8F-9A8C-7F829992E74E]
-[EL Fine]: sql: 2016-06-08 10:40:58.697--ClientSession(1563379805)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--UPDATE ast_BloodRequest_T SET dateNeededBy = ?, dispatchedToPatientOn = ?, patientName = ?, requestedByDoctor = ?, requestedByHospital = ?, versionId = ? WHERE ((bloodRequestId = ?) AND (versionId = ?))
-	bind => [2016-06-08 09:26:59.123, 2016-06-08 09:26:59.121, b6z1CHi6MfW2jJaX4iMYsxzhsluZ7Mw35IlFT2sPL0piLSQNhq, LU6bReSzgSwtVRepbkMBrxKXaDlWtXr2mkzYPoHdYlF6423Opf, JpWQakFqsoKFSurBWGTLaO1hlwQnVX4TYN4erTfSHx4htyvUFm, 2, 3B03C36C-4075-4C8F-9A8C-7F829992E74E, 1]
-[EL Fine]: sql: 2016-06-08 10:40:58.738--ClientSession(668158805)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bldg, dateNeededBy, dispatchedToPatientOn, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE ((activeStatus = ?) AND (bloodRequestId = ?))
-	bind => [1, 3B03C36C-4075-4C8F-9A8C-7F829992E74E]
-[EL Fine]: sql: 2016-06-08 10:40:58.75--ClientSession(735806241)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bldg, dateNeededBy, dispatchedToPatientOn, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE ((activeStatus = ?) AND (bldg = ?))
-	bind => [1, CE8ED7B8-C3DD-4B3A-905D-DE840B3EFA1A]
-[EL Fine]: sql: 2016-06-08 10:40:58.815--ClientSession(1989912056)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bldg, dateNeededBy, dispatchedToPatientOn, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE (bloodRequestId = ?)
-	bind => [3B03C36C-4075-4C8F-9A8C-7F829992E74E]
-[EL Fine]: sql: 2016-06-08 10:40:58.816--ClientSession(1989912056)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_BloodRequest_T WHERE ((bloodRequestId = ?) AND (versionId = ?))
-	bind => [3B03C36C-4075-4C8F-9A8C-7F829992E74E, 2]
-[EL Fine]: sql: 2016-06-08 10:40:58.853--ClientSession(1850710940)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodGroupId, bloodGroups, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodGroup_M WHERE (bloodGroupId = ?)
-	bind => [CE8ED7B8-C3DD-4B3A-905D-DE840B3EFA1A]
-[EL Fine]: sql: 2016-06-08 10:40:58.854--ClientSession(1850710940)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_BloodGroup_M WHERE ((bloodGroupId = ?) AND (versionId = ?))
-	bind => [CE8ED7B8-C3DD-4B3A-905D-DE840B3EFA1A, 1]
+[EL Fine]: sql: 2016-06-08 12:28:42.074--ClientSession(329503685)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bldg, dateNeededBy, dispatchedToPatientOn, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE (bloodRequestId = ?)
+	bind => [82AF7983-2AD7-4B14-BF6D-5D652ABC76B2]
+[EL Fine]: sql: 2016-06-08 12:28:42.076--ClientSession(329503685)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--UPDATE ast_BloodRequest_T SET dateNeededBy = ?, dispatchedToPatientOn = ?, patientName = ?, requestedByDoctor = ?, requestedByHospital = ?, versionId = ? WHERE ((bloodRequestId = ?) AND (versionId = ?))
+	bind => [2016-06-08 09:26:59.123, 2016-06-08 09:26:59.121, b6z1CHi6MfW2jJaX4iMYsxzhsluZ7Mw35IlFT2sPL0piLSQNhq, LU6bReSzgSwtVRepbkMBrxKXaDlWtXr2mkzYPoHdYlF6423Opf, JpWQakFqsoKFSurBWGTLaO1hlwQnVX4TYN4erTfSHx4htyvUFm, 2, 82AF7983-2AD7-4B14-BF6D-5D652ABC76B2, 1]
+[EL Fine]: sql: 2016-06-08 12:28:42.115--ClientSession(113768216)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bldg, dateNeededBy, dispatchedToPatientOn, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE ((activeStatus = ?) AND (bloodRequestId = ?))
+	bind => [1, 82AF7983-2AD7-4B14-BF6D-5D652ABC76B2]
+[EL Fine]: sql: 2016-06-08 12:28:42.124--ClientSession(228659212)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bldg, dateNeededBy, dispatchedToPatientOn, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE ((activeStatus = ?) AND (bldg = ?))
+	bind => [1, ECF2A528-E1F9-4D9E-8E02-45DA4FC49E37]
+[EL Fine]: sql: 2016-06-08 12:28:42.176--ClientSession(1487060010)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT bloodRequestId, bldg, dateNeededBy, dispatchedToPatientOn, noOfUnits, patientName, requestedByDoctor, requestedByHospital, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodRequest_T WHERE (bloodRequestId = ?)
+	bind => [82AF7983-2AD7-4B14-BF6D-5D652ABC76B2]
+[EL Fine]: sql: 2016-06-08 12:28:42.177--ClientSession(1487060010)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_BloodRequest_T WHERE ((bloodRequestId = ?) AND (versionId = ?))
+	bind => [82AF7983-2AD7-4B14-BF6D-5D652ABC76B2, 2]
+[EL Fine]: sql: 2016-06-08 12:28:42.233--ClientSession(948191845)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT bloodGroupId, bloodGroups, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodGroup_M WHERE (bloodGroupId = ?)
+	bind => [ECF2A528-E1F9-4D9E-8E02-45DA4FC49E37]
+[EL Fine]: sql: 2016-06-08 12:28:42.235--ClientSession(948191845)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_BloodGroup_M WHERE ((bloodGroupId = ?) AND (versionId = ?))
+	bind => [ECF2A528-E1F9-4D9E-8E02-45DA4FC49E37, 1]
 ]]></system-out>
   <system-err><![CDATA[BloodRequest.noOfUnits may not be null
 java.lang.SecurityException: BloodRequest.noOfUnits may not be null

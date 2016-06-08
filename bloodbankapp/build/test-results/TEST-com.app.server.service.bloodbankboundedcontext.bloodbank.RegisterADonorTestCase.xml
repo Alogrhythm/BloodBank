@@ -1,109 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-06-08T10:40:55" hostname="d669fb8cdd3c" time="1.355">
+<testsuite name="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-06-08T12:28:38" hostname="12d311cb0219" time="1.086">
   <properties/>
-  <testcase name="test1Save" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" time="0.472"/>
-  <testcase name="test2Update" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" time="0.083"/>
-  <testcase name="test3FindById" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" time="0.015"/>
-  <testcase name="test3findByaddr" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" time="0.014"/>
-  <testcase name="test3findBybg" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" time="0.019"/>
+  <testcase name="test1Save" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" time="0.476"/>
+  <testcase name="test2Update" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" time="0.049"/>
+  <testcase name="test3FindById" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" time="0.012"/>
+  <testcase name="test3findByaddr" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" time="0.013"/>
+  <testcase name="test3findBybg" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" time="0.014"/>
   <testcase name="test3findBygendr" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" time="0.013"/>
-  <testcase name="test5NegativeTesting" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" time="0.056"/>
-  <testcase name="test6Delete" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" time="0.681"/>
-  <system-out><![CDATA[Wed Jun 08 10:40:55 UTC 2016|Log Manager Factory|Initialization Process started.....
-Wed Jun 08 10:40:55 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
-Wed Jun 08 10:40:55 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
-Wed Jun 08 10:40:55 UTC 2016|Alarm Manager|Loading Alarms ......
-Wed Jun 08 10:40:55 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
-Wed Jun 08 10:40:55 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
-Wed Jun 08 10:40:55 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=4/564 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP= A.Map=[645]  E.Map EC/RC=[238/66] )
-Wed Jun 08 10:40:55 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
-Wed Jun 08 10:40:55 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
-Wed Jun 08 10:40:55 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
-Wed Jun 08 10:40:55 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
-Wed Jun 08 10:40:55 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
-Wed Jun 08 10:40:55 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
-Wed Jun 08 10:40:55 UTC 2016|Alarm Manager|Initialized Exception Lookup...
-Wed Jun 08 10:40:55 UTC 2016|Log Manager|Initialize Log Config File ......
-Wed Jun 08 10:40:55 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
-Wed Jun 08 10:40:55 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
-Wed Jun 08 10:40:55 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
-Wed Jun 08 10:40:55 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
-Wed Jun 08 10:40:55 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
-Wed Jun 08 10:40:55 UTC 2016|Log Manager|Loading Default Connector for Logging ......
-Wed Jun 08 10:40:55 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
-Wed Jun 08 10:40:55 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
-Wed Jun 08 10:40:55 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@4aa2c3fd] ....
-Wed Jun 08 10:40:55 UTC 2016|Scheduler|Starting the Scheduler ......
-Wed Jun 08 10:40:55 UTC 2016|Scheduler|Adding [LMID=[b79d927c-f182-4350-967c-51a309562ddf]] Delay=5 Time Unit=MINUTES
-Wed Jun 08 10:40:55 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
-Wed Jun 08 10:40:55 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
-Wed Jun 08 10:40:55 UTC 2016|Scheduler|Startup Completed..
-Wed Jun 08 10:40:55 UTC 2016|Log Manager|Initialization Process Complete ......
-Wed Jun 08 10:40:55 UTC 2016|Log Manager Factory|Log Manager READY! ID = b79d927c-f182-4350-967c-51a309562ddf
-[EL Fine]: sql: 2016-06-08 10:40:55.377--ClientSession(555424940)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_BloodGroup_M (bloodGroupId, bloodGroups, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [B21CC0B5-CE13-4AF6-BC86-719B83C3F521, sSwmD6KGjpyOqyEeebvSjozjjq4dkra2TwKjDRI7BNXUv6F3d1, 1, AAAAA, 2016-06-08 10:40:55.373, AAAAA, 2016-06-08 10:40:55.373, 1, 51000]
-[EL Fine]: sql: 2016-06-08 10:40:55.457--ClientSession(858357020)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [7D91B063-F0FD-4429-A6B3-44C50A120923, tjBELdvx1OW2kWQJlqJfyvlF6bHJsCO8, 3, 7, eqZ, Pbb, cUZ1XJsof3S15BM0uqpg38nseBa7cBsJat70aG01mBQUb40RW2, Arc2aoypnbOiWokeOLGpAVDRnVtioNeIZntGrYae70IWByRU7W, sN7, fqh0n3RbONX2eskRkOvheKsitfcEFjEjLOGRTPrkbaMF2NDpXD, Vqw5FoXjlJoHTCtsV13fGGDtuXlZpTnC, 608, 1, AAAAA, 2016-06-08 10:40:55.449, AAAAA, 2016-06-08 10:40:55.449, 1, 51000]
-[EL Fine]: sql: 2016-06-08 10:40:55.485--ClientSession(213675457)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AddressType_M (addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [D233C033-8BAF-44DB-B410-313C65090209, hvWvIatQnEF8GYB2U1el7txbQqDLycjliKcWbj2nKQO5UFqxXP, u9PmdSD8uIhbZCh8BmfHFH6yDrQQbWgqBRz22zZ3oLl1ognpAb, SYKFWREf7ZlNhGMD58r2RXSe3y3P1tVHyAW2U3UILPXbDR0wX8, 1, AAAAA, 2016-06-08 10:40:55.482, AAAAA, 2016-06-08 10:40:55.482, 1, 51000]
-[EL Fine]: sql: 2016-06-08 10:40:55.539--ClientSession(1529121755)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_State_M (stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [90BFD941-0788-40F4-8CFC-3CBC56B34471, 7D91B063-F0FD-4429-A6B3-44C50A120923, Zo4H35P6nPGIQXR5Ig71RPkEPTxFSH13xaoTfVPgOSGy1ByCYA, 2, 3, 2, i4y0zXu1ArclYsNKk2jLQ5UycCupHne1, o25iUaBuDeP5CBP2G70uXqn2DdLut2xc, p6bqbnOv5ggx5eZNSDyoV21Y7ywwWAIlZANVwu44hJy0wBZShA, DNPPwo4aUWIxgAa0XQ7Aa6dkHwXMT22bbIGNLfKTF5dnYvhC1O, YNzjSNUEIk5ulee6YyHQgQP8xYH6wWaZYXo6D4q5T56Zgi4jNg, 1, AAAAA, 2016-06-08 10:40:55.532, AAAAA, 2016-06-08 10:40:55.532, 1, 51000]
-[EL Fine]: sql: 2016-06-08 10:40:55.588--ClientSession(594337006)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_City_M (cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [5A79E139-6D0F-4BAE-A8E4-A61E92D8D2CC, 2, VTP9TH6zRwzoIbO5VVnu5RZS8KhXNEYx, qYsR2EdcT6yzz8BaB7WqMLpAEk6U2sCEPBTYAO5zYaaL28snOb, 3f2gJRhMr43cub357XwoKan6clIWeLiPagygnNXHtDL4xBtLK9, 7, 8, VHcE1bB7roDPGTzksyK2FiOTeOWu5qAsLWehE0GLuTscUoFVAc, 7D91B063-F0FD-4429-A6B3-44C50A120923, 90BFD941-0788-40F4-8CFC-3CBC56B34471, 1, AAAAA, 2016-06-08 10:40:55.532, AAAAA, 2016-06-08 10:40:55.532, 1, 51000]
-[EL Fine]: sql: 2016-06-08 10:40:55.643--ClientSession(1982569517)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Address_T (addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [4AA4A552-EB78-4A25-B619-58B00E4F76E4, Bka8H2PGtydZPlKkzGAgBD0my1r1bCKbH6IWbCEa2ZVouMtoCk, IW3xxQcmD7bkdLl9LNiumYbSPxShIym3UNzRzkWMyssn8Br90U, N9R7wp3EHKjkaUWpDQ5AcITcjbjKAzBTpiR3GhBKoCiQZ9Jfwr, hqyOuZ72ArC, D233C033-8BAF-44DB-B410-313C65090209, 5A79E139-6D0F-4BAE-A8E4-A61E92D8D2CC, 7D91B063-F0FD-4429-A6B3-44C50A120923, 4VP0AJTuJSF9mfRrkDXDBKGl4F25bPCGwBQJ10B8WMmmumInAr, Rx3eWTQS11Mi2p47togwZ8WkJMUS2e1wmkaJcE2WkaPipk99ii, 90BFD941-0788-40F4-8CFC-3CBC56B34471, 1, t9YdRz, AAAAA, 2016-06-08 10:40:55.449, AAAAA, 2016-06-08 10:40:55.449, 1, 51000]
-[EL Fine]: sql: 2016-06-08 10:40:55.714--ClientSession(1154416864)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Gender_M (genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [9288CABD-2F70-430E-8970-EADB17FCD99F, uekuZcqOcYDxx1zPIMFKuUgkgjLZI9Q8PstljNce0ybUTb1WFc, 1, AAAAA, 2016-06-08 10:40:55.711, AAAAA, 2016-06-08 10:40:55.711, 1, 51000]
+  <testcase name="test5NegativeTesting" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" time="0.045"/>
+  <testcase name="test6Delete" classname="com.app.server.service.bloodbankboundedcontext.bloodbank.RegisterADonorTestCase" time="0.461"/>
+  <system-out><![CDATA[Wed Jun 08 12:28:38 UTC 2016|Log Manager Factory|Initialization Process started.....
+Wed Jun 08 12:28:38 UTC 2016|Log Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
+Wed Jun 08 12:28:38 UTC 2016|Alarm Manager|Initialized with Path = [/home/applifire/workspace/bloodbankapp/src/main/webapp/WEB-INF/conf]
+Wed Jun 08 12:28:38 UTC 2016|Alarm Manager|Loading Alarms ......
+Wed Jun 08 12:28:38 UTC 2016|Alarm XML Parser|FWA|XML Parsing Complete........ 
+Wed Jun 08 12:28:38 UTC 2016|Alarm File Manager|FWA|Alarm File Status.. [ApplicationFrameworkAlarms.xml]|Version=15|Status=Done 
+Wed Jun 08 12:28:38 UTC 2016|Alarm File Manager|FWA|Alarm Stats = ( BC/AL=4/564 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP= A.Map=[645]  E.Map EC/RC=[238/66] )
+Wed Jun 08 12:28:38 UTC 2016|Alarm XML Parser|APP|XML Parsing Complete........ 
+Wed Jun 08 12:28:38 UTC 2016|Alarm File Manager|APP|Alarm File Status.. [ApplicationAlarms.xml]|Version=1|Status=Done 
+Wed Jun 08 12:28:38 UTC 2016|Alarm File Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
+Wed Jun 08 12:28:38 UTC 2016|ApplicationAlarmContext| <><><><><> Create App Alarms ....  <><><><><> 
+Wed Jun 08 12:28:38 UTC 2016|ApplicationAlarmContext|Alarms are generated ONLY in Development Mode.. 
+Wed Jun 08 12:28:38 UTC 2016|Alarm Manager|APP|Alarm Stats = ( BC/AL=7/1050 SYS=4/10 [564/0]  TPL=0/0 [0/0]  APP=3/6 [486/0]  A.Map=[975]  E.Map EC/RC=[376/88] )
+Wed Jun 08 12:28:38 UTC 2016|Alarm Manager|Initialized Exception Lookup...
+Wed Jun 08 12:28:38 UTC 2016|Log Manager|Initialize Log Config File ......
+Wed Jun 08 12:28:38 UTC 2016|Pluggable Connectors|Adding Connectors : StandardOutputConnector isEnabled=true isDefault=false isFallBack=true
+Wed Jun 08 12:28:38 UTC 2016|Pluggable Connectors|Adding Connectors : StandardFileConnector isEnabled=true isDefault=false isFallBack=false
+Wed Jun 08 12:28:38 UTC 2016|Pluggable Connectors|Adding Connectors : Sprinkler isEnabled=true isDefault=true isFallBack=false
+Wed Jun 08 12:28:38 UTC 2016|Pluggable Connectors|Default Connector Name : com.spartan.logger.core.LogMessenger
+Wed Jun 08 12:28:38 UTC 2016|Log Config Parser|Connector Least Log Level =[4]  FallBack Log Level =[3]
+Wed Jun 08 12:28:38 UTC 2016|Log Manager|Loading Default Connector for Logging ......
+Wed Jun 08 12:28:38 UTC 2016|Log Manager|Loading class .. com.spartan.logger.core.LogMessenger
+Wed Jun 08 12:28:38 UTC 2016|Plugggable Connector|Connector class com.spartan.logger.core.LogMessenger Initialized... @ Log Level = 3
+Wed Jun 08 12:28:38 UTC 2016|Log Manager|Starting the Default Connector [com.spartan.logger.core.LogMessenger@3969e244] ....
+Wed Jun 08 12:28:38 UTC 2016|Scheduler|Starting the Scheduler ......
+Wed Jun 08 12:28:38 UTC 2016|Scheduler|Adding [LMID=[44537018-dfae-4f4a-ba36-64fda5ff4697]] Delay=5 Time Unit=MINUTES
+Wed Jun 08 12:28:38 UTC 2016|Scheduler|Adding [App Alarm Manager File=[ApplicationAlarms.xml]] Delay=30 Time Unit=MINUTES
+Wed Jun 08 12:28:38 UTC 2016|Scheduler|Adding [FW Alarm Manager File=[ApplicationFrameworkAlarms.xml]] Delay=3 Time Unit=MINUTES
+Wed Jun 08 12:28:38 UTC 2016|Scheduler|Startup Completed..
+Wed Jun 08 12:28:38 UTC 2016|Log Manager|Initialization Process Complete ......
+Wed Jun 08 12:28:38 UTC 2016|Log Manager Factory|Log Manager READY! ID = 44537018-dfae-4f4a-ba36-64fda5ff4697
+[EL Fine]: sql: 2016-06-08 12:28:38.782--ClientSession(171761732)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_BloodGroup_M (bloodGroupId, bloodGroups, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [0E33BE58-A088-4F12-8E14-5A434B8581B0, sSwmD6KGjpyOqyEeebvSjozjjq4dkra2TwKjDRI7BNXUv6F3d1, 1, AAAAA, 2016-06-08 12:28:38.779, AAAAA, 2016-06-08 12:28:38.779, 1, 51000]
+[EL Fine]: sql: 2016-06-08 12:28:38.839--ClientSession(1826348123)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [3A775B28-8A22-4477-8214-9D0A6CE70B41, tjBELdvx1OW2kWQJlqJfyvlF6bHJsCO8, 3, 7, eqZ, Pbb, cUZ1XJsof3S15BM0uqpg38nseBa7cBsJat70aG01mBQUb40RW2, Arc2aoypnbOiWokeOLGpAVDRnVtioNeIZntGrYae70IWByRU7W, sN7, fqh0n3RbONX2eskRkOvheKsitfcEFjEjLOGRTPrkbaMF2NDpXD, Vqw5FoXjlJoHTCtsV13fGGDtuXlZpTnC, 608, 1, AAAAA, 2016-06-08 12:28:38.832, AAAAA, 2016-06-08 12:28:38.832, 1, 51000]
+[EL Fine]: sql: 2016-06-08 12:28:38.894--ClientSession(322904516)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AddressType_M (addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [9ADD4A56-7E69-48FF-B413-67FF74D4849A, hvWvIatQnEF8GYB2U1el7txbQqDLycjliKcWbj2nKQO5UFqxXP, u9PmdSD8uIhbZCh8BmfHFH6yDrQQbWgqBRz22zZ3oLl1ognpAb, SYKFWREf7ZlNhGMD58r2RXSe3y3P1tVHyAW2U3UILPXbDR0wX8, 1, AAAAA, 2016-06-08 12:28:38.89, AAAAA, 2016-06-08 12:28:38.89, 1, 51000]
+[EL Fine]: sql: 2016-06-08 12:28:38.932--ClientSession(1711521445)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_State_M (stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [6D623689-08AE-4296-B741-434A018A765A, 3A775B28-8A22-4477-8214-9D0A6CE70B41, Zo4H35P6nPGIQXR5Ig71RPkEPTxFSH13xaoTfVPgOSGy1ByCYA, 2, 3, 2, i4y0zXu1ArclYsNKk2jLQ5UycCupHne1, o25iUaBuDeP5CBP2G70uXqn2DdLut2xc, p6bqbnOv5ggx5eZNSDyoV21Y7ywwWAIlZANVwu44hJy0wBZShA, DNPPwo4aUWIxgAa0XQ7Aa6dkHwXMT22bbIGNLfKTF5dnYvhC1O, YNzjSNUEIk5ulee6YyHQgQP8xYH6wWaZYXo6D4q5T56Zgi4jNg, 1, AAAAA, 2016-06-08 12:28:38.921, AAAAA, 2016-06-08 12:28:38.921, 1, 51000]
+[EL Fine]: sql: 2016-06-08 12:28:38.987--ClientSession(98366630)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_City_M (cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [3F0A26E1-6253-4FED-ADDD-48BC54BBD7E6, 2, VTP9TH6zRwzoIbO5VVnu5RZS8KhXNEYx, qYsR2EdcT6yzz8BaB7WqMLpAEk6U2sCEPBTYAO5zYaaL28snOb, 3f2gJRhMr43cub357XwoKan6clIWeLiPagygnNXHtDL4xBtLK9, 7, 8, VHcE1bB7roDPGTzksyK2FiOTeOWu5qAsLWehE0GLuTscUoFVAc, 3A775B28-8A22-4477-8214-9D0A6CE70B41, 6D623689-08AE-4296-B741-434A018A765A, 1, AAAAA, 2016-06-08 12:28:38.921, AAAAA, 2016-06-08 12:28:38.921, 1, 51000]
+[EL Fine]: sql: 2016-06-08 12:28:39.108--ClientSession(296898169)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Address_T (addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [E3613494-189D-480F-AFCC-DFE4F829A6D8, Bka8H2PGtydZPlKkzGAgBD0my1r1bCKbH6IWbCEa2ZVouMtoCk, IW3xxQcmD7bkdLl9LNiumYbSPxShIym3UNzRzkWMyssn8Br90U, N9R7wp3EHKjkaUWpDQ5AcITcjbjKAzBTpiR3GhBKoCiQZ9Jfwr, hqyOuZ72ArC, 9ADD4A56-7E69-48FF-B413-67FF74D4849A, 3F0A26E1-6253-4FED-ADDD-48BC54BBD7E6, 3A775B28-8A22-4477-8214-9D0A6CE70B41, 4VP0AJTuJSF9mfRrkDXDBKGl4F25bPCGwBQJ10B8WMmmumInAr, Rx3eWTQS11Mi2p47togwZ8WkJMUS2e1wmkaJcE2WkaPipk99ii, 6D623689-08AE-4296-B741-434A018A765A, 1, t9YdRz, AAAAA, 2016-06-08 12:28:38.832, AAAAA, 2016-06-08 12:28:38.832, 1, 51000]
+[EL Fine]: sql: 2016-06-08 12:28:39.167--ClientSession(1319489952)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Gender_M (genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [093B27D2-00E1-4F8D-A4CC-84BD8393FD5D, uekuZcqOcYDxx1zPIMFKuUgkgjLZI9Q8PstljNce0ybUTb1WFc, 1, AAAAA, 2016-06-08 12:28:39.161, AAAAA, 2016-06-08 12:28:39.161, 1, 51000]
 Setting logged in user info for ADD
-[EL Fine]: sql: 2016-06-08 10:40:55.768--ClientSession(470128286)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_RegisterADonor_T (donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-	bind => [8E41071D-F132-4019-9E36-AC78FD662E77, 4AA4A552-EB78-4A25-B619-58B00E4F76E4, B21CC0B5-CE13-4AF6-BC86-719B83C3F521, 2016-06-08 09:00:34.352, lOeMFnI0uTF1racDAx1XsPLTeaqg0NPz9RYyj2K9QQbwgi24xA, ChzJopwAKglOYWe8HYlarHQ0zUMpg53SGqs0BfyZNpAflwz5xS, 9288CABD-2F70-430E-8970-EADB17FCD99F, 2147483647, 2016-06-08 09:00:34.58, T2rIm1Z9WQwFjufRfghkAGVSy3Tw84KomhZecwMtuN8tbR5cj8, 1, AAAAA, 2016-06-08 10:40:55.76, AAAAA, 2016-06-08 10:40:55.76, 1, 51000]
-[EL Fine]: sql: 2016-06-08 10:40:55.821--ClientSession(1258832599)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_RegisterADonor_T WHERE ((activeStatus = ?) AND (donorId = ?))
-	bind => [1, 8E41071D-F132-4019-9E36-AC78FD662E77]
+[EL Fine]: sql: 2016-06-08 12:28:39.202--ClientSession(1311307274)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_RegisterADonor_T (donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [4B53A686-F20E-4EE5-B43F-BF21BA5B76CE, E3613494-189D-480F-AFCC-DFE4F829A6D8, 0E33BE58-A088-4F12-8E14-5A434B8581B0, 2016-06-08 09:00:34.352, lOeMFnI0uTF1racDAx1XsPLTeaqg0NPz9RYyj2K9QQbwgi24xA, ChzJopwAKglOYWe8HYlarHQ0zUMpg53SGqs0BfyZNpAflwz5xS, 093B27D2-00E1-4F8D-A4CC-84BD8393FD5D, 2147483647, 2016-06-08 09:00:34.58, T2rIm1Z9WQwFjufRfghkAGVSy3Tw84KomhZecwMtuN8tbR5cj8, 1, AAAAA, 2016-06-08 12:28:39.194, AAAAA, 2016-06-08 12:28:39.194, 1, 51000]
+[EL Fine]: sql: 2016-06-08 12:28:39.24--ClientSession(603673955)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_RegisterADonor_T WHERE ((activeStatus = ?) AND (donorId = ?))
+	bind => [1, 4B53A686-F20E-4EE5-B43F-BF21BA5B76CE]
 Setting logged in user info for UPDATE
-[EL Fine]: sql: 2016-06-08 10:40:55.83--ClientSession(1238434933)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_RegisterADonor_T WHERE (donorId = ?)
-	bind => [8E41071D-F132-4019-9E36-AC78FD662E77]
-[EL Fine]: sql: 2016-06-08 10:40:55.833--ClientSession(1238434933)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--UPDATE ast_RegisterADonor_T SET dob = ?, donorName = ?, emailId = ?, lastDonationDate = ?, phoneNo = ?, versionId = ? WHERE ((donorId = ?) AND (versionId = ?))
-	bind => [2016-06-08 09:00:34.622, 6u5R0VAKyfHqcur71QmMEYgPj4OazHDGgqGhDG1K9jxRRLZZsc, aK3nhnRUrXy80jylLvGCwrt1QpqaQVVRnBkahyoROywptDdg2D, 2016-06-08 09:00:34.628, wTekxHAE8DfgZrs6kL5M9SHB7QyeLBZ0mwepLh1T5abZBdY2ey, 2, 8E41071D-F132-4019-9E36-AC78FD662E77, 1]
-[EL Fine]: sql: 2016-06-08 10:40:55.905--ClientSession(1556117963)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_RegisterADonor_T WHERE ((activeStatus = ?) AND (donorId = ?))
-	bind => [1, 8E41071D-F132-4019-9E36-AC78FD662E77]
-[EL Fine]: sql: 2016-06-08 10:40:55.92--ClientSession(434650709)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_RegisterADonor_T WHERE ((activeStatus = ?) AND (addr = ?))
-	bind => [1, 4AA4A552-EB78-4A25-B619-58B00E4F76E4]
-[EL Fine]: sql: 2016-06-08 10:40:55.94--ClientSession(863633276)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_RegisterADonor_T WHERE ((activeStatus = ?) AND (bg = ?))
-	bind => [1, B21CC0B5-CE13-4AF6-BC86-719B83C3F521]
-[EL Fine]: sql: 2016-06-08 10:40:55.952--ClientSession(951981395)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_RegisterADonor_T WHERE ((activeStatus = ?) AND (gendr = ?))
-	bind => [1, 9288CABD-2F70-430E-8970-EADB17FCD99F]
-[EL Fine]: sql: 2016-06-08 10:40:56.021--ClientSession(669051666)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_RegisterADonor_T WHERE (donorId = ?)
-	bind => [8E41071D-F132-4019-9E36-AC78FD662E77]
-[EL Fine]: sql: 2016-06-08 10:40:56.023--ClientSession(669051666)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_RegisterADonor_T WHERE ((donorId = ?) AND (versionId = ?))
-	bind => [8E41071D-F132-4019-9E36-AC78FD662E77, 2]
-[EL Fine]: sql: 2016-06-08 10:40:56.12--ClientSession(171242207)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE (genderId = ?)
-	bind => [9288CABD-2F70-430E-8970-EADB17FCD99F]
-[EL Fine]: sql: 2016-06-08 10:40:56.123--ClientSession(171242207)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Gender_M WHERE ((genderId = ?) AND (versionId = ?))
-	bind => [9288CABD-2F70-430E-8970-EADB17FCD99F, 1]
-[EL Fine]: sql: 2016-06-08 10:40:56.269--ClientSession(332945711)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE (addressId = ?)
-	bind => [4AA4A552-EB78-4A25-B619-58B00E4F76E4]
-[EL Fine]: sql: 2016-06-08 10:40:56.272--ClientSession(332945711)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Address_T WHERE ((addressId = ?) AND (versionId = ?))
-	bind => [4AA4A552-EB78-4A25-B619-58B00E4F76E4, 1]
-[EL Fine]: sql: 2016-06-08 10:40:56.319--ClientSession(1846488803)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_City_M WHERE (cityId = ?)
-	bind => [5A79E139-6D0F-4BAE-A8E4-A61E92D8D2CC]
-[EL Fine]: sql: 2016-06-08 10:40:56.322--ClientSession(1846488803)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_City_M WHERE ((cityId = ?) AND (versionId = ?))
-	bind => [5A79E139-6D0F-4BAE-A8E4-A61E92D8D2CC, 1]
-[EL Fine]: sql: 2016-06-08 10:40:56.352--ClientSession(26336396)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_State_M WHERE (stateId = ?)
-	bind => [90BFD941-0788-40F4-8CFC-3CBC56B34471]
-[EL Fine]: sql: 2016-06-08 10:40:56.355--ClientSession(26336396)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_State_M WHERE ((stateId = ?) AND (versionId = ?))
-	bind => [90BFD941-0788-40F4-8CFC-3CBC56B34471, 1]
-[EL Fine]: sql: 2016-06-08 10:40:56.453--ClientSession(1244672126)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE (addressTypeId = ?)
-	bind => [D233C033-8BAF-44DB-B410-313C65090209]
-[EL Fine]: sql: 2016-06-08 10:40:56.456--ClientSession(1244672126)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AddressType_M WHERE ((addressTypeId = ?) AND (versionId = ?))
-	bind => [D233C033-8BAF-44DB-B410-313C65090209, 1]
-[EL Fine]: sql: 2016-06-08 10:40:56.502--ClientSession(246359578)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
-	bind => [7D91B063-F0FD-4429-A6B3-44C50A120923]
-[EL Fine]: sql: 2016-06-08 10:40:56.505--ClientSession(246359578)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Country_M WHERE ((countryId = ?) AND (versionId = ?))
-	bind => [7D91B063-F0FD-4429-A6B3-44C50A120923, 1]
-[EL Fine]: sql: 2016-06-08 10:40:56.62--ClientSession(207380482)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--SELECT bloodGroupId, bloodGroups, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodGroup_M WHERE (bloodGroupId = ?)
-	bind => [B21CC0B5-CE13-4AF6-BC86-719B83C3F521]
-[EL Fine]: sql: 2016-06-08 10:40:56.623--ClientSession(207380482)--Connection(1149263510)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_BloodGroup_M WHERE ((bloodGroupId = ?) AND (versionId = ?))
-	bind => [B21CC0B5-CE13-4AF6-BC86-719B83C3F521, 1]
+[EL Fine]: sql: 2016-06-08 12:28:39.248--ClientSession(362406202)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_RegisterADonor_T WHERE (donorId = ?)
+	bind => [4B53A686-F20E-4EE5-B43F-BF21BA5B76CE]
+[EL Fine]: sql: 2016-06-08 12:28:39.251--ClientSession(362406202)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--UPDATE ast_RegisterADonor_T SET dob = ?, donorName = ?, emailId = ?, lastDonationDate = ?, phoneNo = ?, versionId = ? WHERE ((donorId = ?) AND (versionId = ?))
+	bind => [2016-06-08 09:00:34.622, 6u5R0VAKyfHqcur71QmMEYgPj4OazHDGgqGhDG1K9jxRRLZZsc, aK3nhnRUrXy80jylLvGCwrt1QpqaQVVRnBkahyoROywptDdg2D, 2016-06-08 09:00:34.628, wTekxHAE8DfgZrs6kL5M9SHB7QyeLBZ0mwepLh1T5abZBdY2ey, 2, 4B53A686-F20E-4EE5-B43F-BF21BA5B76CE, 1]
+[EL Fine]: sql: 2016-06-08 12:28:39.287--ClientSession(1669539457)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_RegisterADonor_T WHERE ((activeStatus = ?) AND (donorId = ?))
+	bind => [1, 4B53A686-F20E-4EE5-B43F-BF21BA5B76CE]
+[EL Fine]: sql: 2016-06-08 12:28:39.3--ClientSession(594337006)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_RegisterADonor_T WHERE ((activeStatus = ?) AND (addr = ?))
+	bind => [1, E3613494-189D-480F-AFCC-DFE4F829A6D8]
+[EL Fine]: sql: 2016-06-08 12:28:39.314--ClientSession(1432020275)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_RegisterADonor_T WHERE ((activeStatus = ?) AND (bg = ?))
+	bind => [1, 0E33BE58-A088-4F12-8E14-5A434B8581B0]
+[EL Fine]: sql: 2016-06-08 12:28:39.328--ClientSession(895443619)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_RegisterADonor_T WHERE ((activeStatus = ?) AND (gendr = ?))
+	bind => [1, 093B27D2-00E1-4F8D-A4CC-84BD8393FD5D]
+[EL Fine]: sql: 2016-06-08 12:28:39.385--ClientSession(111123386)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT donorId, addr, bg, dob, donorName, emailId, gendr, howOftenUDonated, lastDonationDate, phoneNo, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_RegisterADonor_T WHERE (donorId = ?)
+	bind => [4B53A686-F20E-4EE5-B43F-BF21BA5B76CE]
+[EL Fine]: sql: 2016-06-08 12:28:39.387--ClientSession(111123386)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_RegisterADonor_T WHERE ((donorId = ?) AND (versionId = ?))
+	bind => [4B53A686-F20E-4EE5-B43F-BF21BA5B76CE, 2]
+[EL Fine]: sql: 2016-06-08 12:28:39.459--ClientSession(17237708)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT genderId, gender, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Gender_M WHERE (genderId = ?)
+	bind => [093B27D2-00E1-4F8D-A4CC-84BD8393FD5D]
+[EL Fine]: sql: 2016-06-08 12:28:39.461--ClientSession(17237708)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Gender_M WHERE ((genderId = ?) AND (versionId = ?))
+	bind => [093B27D2-00E1-4F8D-A4CC-84BD8393FD5D, 1]
+[EL Fine]: sql: 2016-06-08 12:28:39.509--ClientSession(558893525)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT addressId, address1, address2, address3, addressLabel, addressTypeId, cityId, countryId, latitude, longitude, stateId, versionId, zipcode, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Address_T WHERE (addressId = ?)
+	bind => [E3613494-189D-480F-AFCC-DFE4F829A6D8]
+[EL Fine]: sql: 2016-06-08 12:28:39.511--ClientSession(558893525)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Address_T WHERE ((addressId = ?) AND (versionId = ?))
+	bind => [E3613494-189D-480F-AFCC-DFE4F829A6D8, 1]
+[EL Fine]: sql: 2016-06-08 12:28:39.567--ClientSession(2003882931)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT cityId, cityCode, cityCodeChar2, cityDescription, cityFlag, cityLatitude, cityLongitude, cityName, countryId, stateId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_City_M WHERE (cityId = ?)
+	bind => [3F0A26E1-6253-4FED-ADDD-48BC54BBD7E6]
+[EL Fine]: sql: 2016-06-08 12:28:39.57--ClientSession(2003882931)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_City_M WHERE ((cityId = ?) AND (versionId = ?))
+	bind => [3F0A26E1-6253-4FED-ADDD-48BC54BBD7E6, 1]
+[EL Fine]: sql: 2016-06-08 12:28:39.599--ClientSession(182468891)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT stateId, countryId, stateCapital, stateCapitalLatitude, stateCapitalLongitude, stateCode, stateCodeChar2, stateCodeChar3, stateDescription, stateFlag, stateName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_State_M WHERE (stateId = ?)
+	bind => [6D623689-08AE-4296-B741-434A018A765A]
+[EL Fine]: sql: 2016-06-08 12:28:39.601--ClientSession(182468891)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_State_M WHERE ((stateId = ?) AND (versionId = ?))
+	bind => [6D623689-08AE-4296-B741-434A018A765A, 1]
+[EL Fine]: sql: 2016-06-08 12:28:39.657--ClientSession(1665954934)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT addressTypeId, addressType, addressTypeDesc, addressTypeIcon, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AddressType_M WHERE (addressTypeId = ?)
+	bind => [9ADD4A56-7E69-48FF-B413-67FF74D4849A]
+[EL Fine]: sql: 2016-06-08 12:28:39.659--ClientSession(1665954934)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AddressType_M WHERE ((addressTypeId = ?) AND (versionId = ?))
+	bind => [9ADD4A56-7E69-48FF-B413-67FF74D4849A, 1]
+[EL Fine]: sql: 2016-06-08 12:28:39.706--ClientSession(415498794)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
+	bind => [3A775B28-8A22-4477-8214-9D0A6CE70B41]
+[EL Fine]: sql: 2016-06-08 12:28:39.709--ClientSession(415498794)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Country_M WHERE ((countryId = ?) AND (versionId = ?))
+	bind => [3A775B28-8A22-4477-8214-9D0A6CE70B41, 1]
+[EL Fine]: sql: 2016-06-08 12:28:39.78--ClientSession(1100213605)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--SELECT bloodGroupId, bloodGroups, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_BloodGroup_M WHERE (bloodGroupId = ?)
+	bind => [0E33BE58-A088-4F12-8E14-5A434B8581B0]
+[EL Fine]: sql: 2016-06-08 12:28:39.783--ClientSession(1100213605)--Connection(1411156304)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_BloodGroup_M WHERE ((bloodGroupId = ?) AND (versionId = ?))
+	bind => [0E33BE58-A088-4F12-8E14-5A434B8581B0, 1]
 ]]></system-out>
   <system-err><![CDATA[RegisterADonor.donorName may not be null
 java.lang.SecurityException: RegisterADonor.donorName may not be null
